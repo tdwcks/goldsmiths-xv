@@ -34,10 +34,33 @@
   }
 
   .menu--active & {
-    color: $colour_blue;
+    color: #fff;
 
     &:after {
-      background-image: url('../assets/hamburger_blue.svg');
+      background-image: url('../assets/hamburger_white.svg');
     }
   }
+}
+
+a.expanded-url {
+    color: $colour_lightgrey;
+    font-size: 0.85em;
+    text-decoration: none;
+    margin-left: 10px;
+    @include transition(all, 0.1s, ease-in-out);
+
+    &:hover {
+      color: #fff;
+    }
+}
+
+a.expanded-email {
+    color: $colour_lightgrey;
+    font-size: 0.85em;
+    text-decoration: none;
+    @include transition(all, 0.1s, ease-in-out);
+
+    &:hover {
+      color: #fff;
+    }
 }

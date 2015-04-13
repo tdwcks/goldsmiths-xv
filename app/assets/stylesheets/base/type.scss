@@ -37,12 +37,11 @@ h3 {
     line-height: 1.125em;
 
     &.section-title {
-      font-size: 0.9em;
-      padding-bottom: 25px;
+      font-size: 1em;
       padding-top: 50px;
+      padding-bottom: 25px;
       color: $colour_lightgrey;
       position: relative;
-      margin-bottom: 25px;
 
       &:after {
         content: "54";
@@ -60,11 +59,22 @@ h4 {
     color: $colour_dark;
     font-size: 1.875em;
     line-height: 1.2em;
+
+    &.expanded-project-name {
+      font-size: 0.9em;
+      color: $colour_lightestgrey;
+      margin-bottom: 20px;
+    }
 }
 
 h5 {
     font-size: 1.25em;
     line-height: 1.2em;
+
+    &.expanded-designer-name {
+      font-size: 0.9em;
+      color:$colour_lightgrey;
+    }
 }
 
 p {
@@ -95,6 +105,15 @@ p {
       margin-left: 0;
     }
   }
+
+  &.expanded-project-description {
+    color: $colour_lightestgrey;
+    font-size: 1.25em;
+    margin-top: 0;
+    line-height: 1.7em;
+    padding-bottom: 10px;
+  }
+
 }
 
 

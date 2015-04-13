@@ -5,7 +5,7 @@
 //
 
 .menu-container {
-  width: 320px;
+  width: 300px;
   display: block;
   margin: 0 auto;
   margin-top: 150px;
@@ -21,7 +21,7 @@ li.menu-item {
 }
 
 span.menu-superscript {
-  color: $colour_midgrey;
+  color: $colour_lightgrey;
   font-size: 0.6em;
   display: block;
 
@@ -29,9 +29,9 @@ span.menu-superscript {
 
 a.menu-item-link {
   clear: both;
-  color: $colour_dark;
+  color: $colour_lightestgrey;
   font-size: 2.4em;
   text-decoration: none;
-  margin: 3px 0 25px 15px;
+  margin: 3px 0 32px 15px;
   display: block;
 }

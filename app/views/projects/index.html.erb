@@ -70,47 +70,65 @@
 
 	<div class="layout-container">
 
-		<h3 class="section-title">Designers</h3>
+		<article class="layout-designer-expanded">
 
-		<% @projects.limit(5).each do |project| %>
+			<% @projects.limit(5).each do |project| %>
 
-			<div id="project-<%= project.id %>" class="layout-project-expanded">
+				<div id="project-<%= project.id %>" class="layout-project-expanded">
 
-				<div class="layout-one-column-grid">
+					<div class="layout-one-column-grid">
 
-					<h4 class="expanded-project-name"></h4>
-					<h5 class="expanded-designer-name"></h4>
+						<h4 class="expanded-project-name"><%= project.title %></h4>
+						<h5 class="expanded-designer-name"><%= project.designer %></h4>
+
+					</div>
+
+					<div class="layout-one-column-grid"></div>
+
+					<div class="layout-two-column-grid column-right">
+
+						<p class="expanded-project-description">
+							<%= project.description %>
+						</p>
+
+						<a href="mailto:<%= project.email %>?Subject=Great%20Project!" class="expanded-email">Email Designer</a>
+
+						<a class="expanded-url" href="<%= project.url %>">Visit Website</a>
+
+					</div>
+
+					<div class="layout-project-pictures">
+
+						<img src="images/db-img/project<%= project.id %>/img_1.jpg"/>
+
+					</div>
 
 				</div>
 
-				<div class="layout-two-column-gird">
+			<% end %>
 
-					
+		</article>
 
-				</div>
+		<article class="layout-designer-list">
+
+			<div class="layout-one-column-grid">
+
+				<ul class="list-all-designers">
+
+					<% @projects.limit(12).each do |project| %>
+
+					<li name="project-<%= project.id %>">
+			  			<span class="list-designer-name"><%= project.designer %></span>	
+			  			<span class="list-project-name"><%= project.title %></span>		
+			  		</li>
+
+					<% end %>
+
+				</ul>
 
 			</div>
 
-
-		<% end %>
-
-
-		<div class="layout-one-column-grid">
-
-			<ul class="list-all-designers">
-
-				<% @projects.limit(12).each do |project| %>
-
-				<li>
-		  			<span class="list-designer-name"><%= project.designer %></span>	
-		  			<span class="list-project-name"><%= project.title %></span>		
-		  		</li>
-
-				<% end %>
-
-			</ul>
-
-		</div>
+		</arcticle>
 
 		<div class="layout-one-column-grid">
 

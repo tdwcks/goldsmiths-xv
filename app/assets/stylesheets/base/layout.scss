@@ -27,6 +27,31 @@
   margin-right: 24px;
 }
 
+.layout-two-column-grid {
+  float: right;
+   @include calc(width, "50% - 14px");
+}
+
 .layout-column-right {
   margin-right: 0px;
+}
+
+.layout-project-expanded {
+  width: 100%;
+  clear: both;
+  height: 100%;
+  display: none;
+
+  &.active--project--expand {
+    @include animation(north--in 0.7s forwards);
+    display: block;
+  }
+}
+
+.layout-project-pictures {
+  width: 100%;
+  padding-top: 35px;
+  display: block;
+  height: 20px;
+  clear: both;
 }

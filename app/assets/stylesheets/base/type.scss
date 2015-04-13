@@ -37,19 +37,19 @@ h3 {
     line-height: 1.125em;
 
     &.section-title {
-      display: block;
-      margin: 0 auto;
+      font-size: 0.9em;
+      padding-bottom: 25px;
       padding-top: 50px;
-      text-align: center;
-      color: $colour_dark;
+      color: $colour_lightgrey;
       position: relative;
+      margin-bottom: 25px;
 
       &:after {
         content: "54";
         display: inline;
         font-size: 10px;
         letter-spacing: 1px;
-        color: $colour_lightestgrey;
+        color: #fff;
         vertical-align: 60%;
         padding-right: 10px;
       }

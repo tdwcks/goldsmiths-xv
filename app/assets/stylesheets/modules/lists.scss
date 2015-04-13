@@ -1,0 +1,37 @@
+// ==========================================================================
+//
+// Lists
+//
+//
+
+ul.list-all-designers {
+  color: #fff;
+  font-weight: 100;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+    position: relative;
+
+    span {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      display: inline;
+      top: 0;
+      font-weight: 100;
+      font-size: 0.8em,
+    }
+
+    .list-designer-name {
+      color: #fff;
+    }
+
+    .list-project-name {
+      color: $colour_lightgrey;
+    }
+  }
+}

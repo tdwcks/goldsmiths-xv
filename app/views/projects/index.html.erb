@@ -72,6 +72,29 @@
 
 		<h3 class="section-title">Designers</h3>
 
+		<% @projects.limit(5).each do |project| %>
+
+			<div id="project-<%= project.id %>" class="layout-project-expanded">
+
+				<div class="layout-one-column-grid">
+
+					<h4 class="expanded-project-name"></h4>
+					<h5 class="expanded-designer-name"></h4>
+
+				</div>
+
+				<div class="layout-two-column-gird">
+
+					
+
+				</div>
+
+			</div>
+
+
+		<% end %>
+
+
 		<div class="layout-one-column-grid">
 
 			<ul class="list-all-designers">
@@ -79,8 +102,8 @@
 				<% @projects.limit(12).each do |project| %>
 
 				<li>
-		  			<span class="list-designer-name"><%= project.designer %></li>
-		  			<span class="list-project-name"><%= project.title %></li>	
+		  			<span class="list-designer-name"><%= project.designer %></span>	
+		  			<span class="list-project-name"><%= project.title %></span>		
 		  		</li>
 
 				<% end %>
@@ -96,8 +119,8 @@
 				<% @projects.offset(12).limit(12).each do |project| %>
 
 				<li>
-		  			<span class="list-designer-name"><%= project.designer %></li>
-		  			<span class="list-project-name"><%= project.title %></li>	
+		  			<span class="list-designer-name"><%= project.designer %></span>	
+		  			<span class="list-project-name"><%= project.title %></span>	
 		  		</li>
 
 				<% end %>
@@ -113,8 +136,8 @@
 				<% @projects.offset(24).limit(12).each do |project| %>
 
 				<li>
-		  			<span class="list-designer-name"><%= project.designer %></li>
-		  			<span class="list-project-name"><%= project.title %></li>	
+		  			<span class="list-designer-name"><%= project.designer %></span>
+		  			<span class="list-project-name"><%= project.title %></span>	
 		  		</li>
 
 				<% end %>
@@ -130,8 +153,8 @@
 				<% @projects.offset(36).limit(12).each do |project| %>
 
 				<li>
-		  			<span class="list-designer-name"><%= project.designer %></li>
-		  			<span class="list-project-name"><%= project.title %></li>	
+		  			<span class="list-designer-name"><%= project.designer %></span>
+		  			<span class="list-project-name"><%= project.title %></span>	
 		  		</li>
 
 				<% end %>

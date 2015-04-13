@@ -12,7 +12,7 @@
   display: block;
   width: 100%;
   height: 100vh;
-  background: $colour_dark;
+  background: #000;
   position: relative;
 
   @include mq("medium", "max-width") {
@@ -44,8 +44,8 @@
 
 .layout-designers {
   width: 100%;
-  height: 90vh;
-  background: $colour_dark;
+  height: 120vh;
+  background: #000;
 }
 
 .layout-about {

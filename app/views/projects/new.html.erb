@@ -1,0 +1,9 @@
+<%= simple_form_for @project do |form| %>
+  <%= form.input :title, label: "Project Title" %>
+  <%= form.input :designer, label: "Designer Name" %>
+  <%= form.input :url, label: "Designer / Project Website" %>
+  <%= form.input :email, label: "Designers Email" %>
+  <%= form.input :image_folder, label: "image_folder" %>
+  <%= form.input :description, :as => :text, label: "Description" %>
+  <%= form.button :submit %>
+<% end %>

@@ -1,0 +1,163 @@
+<div class="button-menu">
+
+	<a class="button-menu-trigger" href="">Menu</a>
+
+</div>
+
+<div class="layout-menu">
+
+	<div class="menu-container">
+
+		<nav class="main-menu">
+
+			<ul class="menu-items">
+				
+				<li class="menu-item">
+
+					<span class="menu-superscript">01</span>
+					<a id="layout-hero" class="menu-item-link" href="">Home</a>
+
+				</li>
+
+				<li class="menu-item">
+				
+					<span class="menu-superscript">02</span>
+					<a id="layout-designers" class="menu-item-link" href="">Designers</a>
+
+				</li>
+
+				<li class="menu-item">
+
+					<span class="menu-superscript">03</span>
+					<a id="layout-about" class="menu-item-link" href="">About</a>
+
+				</li>
+
+				<li class="menu-item">
+
+					<span class="menu-superscript">04</span>
+					<a id="layout-gallery" class="menu-item-link" href="">Gallery</a>
+					
+				</li>
+
+				<li class="menu-item">
+
+					<span class="menu-superscript">05</span>
+					<a id="layout-press" class="menu-item-link" href="">Press</a>
+					
+				</li>
+
+				<li class="menu-item">
+
+					<span class="menu-superscript">06</span>
+					<a id="layout-contact" class="menu-item-link" href="">Contact</a>
+					
+				</li>
+		
+			</ul>
+
+		</nav>
+
+	</div>
+
+</div>
+
+<article class="layout-hero">
+
+</article>
+
+<article class="layout-designers">
+
+	<div class="layout-container">
+
+		<h3 class="section-title">Designers</h3>
+
+		<div class="layout-one-column-grid">
+
+			<ul class="list-all-designers">
+
+				<% @projects.limit(12).each do |project| %>
+
+				<li>
+		  			<span class="list-designer-name"><%= project.designer %></li>
+		  			<span class="list-project-name"><%= project.title %></li>	
+		  		</li>
+
+				<% end %>
+
+			</ul>
+
+		</div>
+
+		<div class="layout-one-column-grid">
+
+			<ul class="list-all-designers">
+
+				<% @projects.offset(12).limit(12).each do |project| %>
+
+				<li>
+		  			<span class="list-designer-name"><%= project.designer %></li>
+		  			<span class="list-project-name"><%= project.title %></li>	
+		  		</li>
+
+				<% end %>
+
+			</ul>
+
+		</div>
+
+		<div class="layout-one-column-grid">
+
+			<ul class="list-all-designers">
+
+				<% @projects.offset(24).limit(12).each do |project| %>
+
+				<li>
+		  			<span class="list-designer-name"><%= project.designer %></li>
+		  			<span class="list-project-name"><%= project.title %></li>	
+		  		</li>
+
+				<% end %>
+
+			</ul>
+
+		</div>
+
+		<div class="layout-one-column-grid layout-column-right">
+
+			<ul class="list-all-designers">
+
+				<% @projects.offset(36).limit(12).each do |project| %>
+
+				<li>
+		  			<span class="list-designer-name"><%= project.designer %></li>
+		  			<span class="list-project-name"><%= project.title %></li>	
+		  		</li>
+
+				<% end %>
+
+			</ul>
+
+		</div>
+
+		<ul>
+
+	</div>
+
+</article>
+
+<article class="layout-about">
+
+</article>
+
+<article class="layout-gallery">
+
+</article>
+
+<article class="layout-contact">
+
+</article>
+
+<footer class="layout-footer">
+
+</footer>

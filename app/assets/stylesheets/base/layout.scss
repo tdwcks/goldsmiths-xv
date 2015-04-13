@@ -1,0 +1,32 @@
+// ==========================================================================
+//
+// Layout
+//
+//
+
+.layout-container {
+  display: block;
+  margin: 0px auto;
+  width: 75%;
+  position: relative;
+}
+
+.a-block {
+  display: block;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.layout-one-column-grid {
+  float: left; 
+  @include calc(width, "25% - 18px");
+  margin-right: 24px;
+}
+
+.layout-column-right {
+  margin-right: 0px;
+}

@@ -1,0 +1,43 @@
+// ==========================================================================
+//
+// Buttons
+//
+//
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.button-menu {
+  position: fixed;
+  top: 65px;
+  left: 70px;
+}
+
+.button-menu-trigger {
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('../assets/hamburger_white.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: -8px;
+    left: -30px;
+  }
+
+  .menu--active & {
+    color: $colour_blue;
+
+    &:after {
+      background-image: url('../assets/hamburger_blue.svg');
+    }
+  }
+}

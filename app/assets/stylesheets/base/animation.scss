@@ -1,0 +1,49 @@
+// ==========================================================================
+//
+// Animation
+//
+//
+
+@include keyframes(east--in) {
+  from {
+   	@include transform(translateX(125px));
+   	opacity: 0;
+  }
+  to {
+    @include transform(translateX(0));
+    opacity: 1;
+  }
+}
+
+@include keyframes(west--in) {
+  from {
+    @include transform(translateX(-400px));
+    opacity: 0;
+  }
+  to {
+    @include transform(translateX(0));
+    opacity: 1;
+  }
+}
+
+@include keyframes(east--out) {
+  from {
+   	@include transform(translateX(125px));
+   	opacity: 1;
+  }
+  to {
+    @include transform(translateX(0));
+    opacity: 1;
+  }
+}
+
+@include keyframes(west--out) {
+  from {
+    @include transform(translateX(0));
+    opacity: 1;
+  }
+  to {
+    @include transform(translateX(-400px));
+    opacity: 1;
+  }
+}

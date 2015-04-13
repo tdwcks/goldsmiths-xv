@@ -1,0 +1,10 @@
+<p>
+  Admin actions: <%= link_to 'New Book', new_project_path %>
+</p>
+
+<% for project in @projects do %>
+  <h2><%= project.title %></h2>
+  <p><%= project.description %></p>
+  <b> <%= link_to 'Show', {:action => "show", :id => project.id} %></b>
+  <b> <%= link_to 'Edit', {:action => "edit", :id => project.id} %></b>
+<% end %>

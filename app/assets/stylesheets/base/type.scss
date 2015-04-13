@@ -1,0 +1,100 @@
+// ==========================================================================
+//
+// Typography
+//
+//
+
+$main_font: cinetype, sans-serif;
+$mono_font: cinetype-mono, sans-serif;
+
+$base_font_size: 18px;
+
+@include font-face(cinetype, 'fonts/GT-Cinetype-Trial-Regular-webfont', 300);
+@include font-face(sectra, 'fonts/GT-sectra-Bold-trial-webfont', 300);
+@include font-face(cinetype-mono, 'fonts/GT-Cinetype-Trial-Mono-webfont', 300);
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  position: relative;
+}
+
+h1 {
+    font-size: 4.6875em;
+    line-height: 0.96em;
+    font-weight: normal;
+}
+
+h2 {
+    color: $colour_dark;
+    font-size: 2.5em;
+    line-height: 1.2em;
+}
+
+h3 {
+    font-size: 2em;
+    line-height: 1.125em;
+
+    &.section-title {
+      display: block;
+      margin: 0 auto;
+      padding-top: 50px;
+      text-align: center;
+      color: $colour_dark;
+      position: relative;
+
+      &:after {
+        content: "54";
+        display: inline;
+        font-size: 10px;
+        letter-spacing: 1px;
+        color: $colour_lightestgrey;
+        vertical-align: 60%;
+        padding-right: 10px;
+      }
+    }
+}
+
+h4 {
+    color: $colour_dark;
+    font-size: 1.875em;
+    line-height: 1.2em;
+}
+
+h5 {
+    font-size: 1.25em;
+    line-height: 1.2em;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.5em;
+
+  a {
+    @include transition(all, 0.4s, ease-in-out);
+
+    &:hover {
+    }
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  .side-matter-ref {
+      border: none;
+
+    sup {
+      font-size: 0.6em;
+      margin-left: 0;
+    }
+  }
+}
+
+

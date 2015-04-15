@@ -10,8 +10,8 @@
 
 .button-menu {
   position: fixed;
-  top: 65px;
-  left: 70px;
+  top: 50px;
+  left: 60px;
 }
 
 .button-menu-trigger {
@@ -63,4 +63,10 @@ a.expanded-email {
     &:hover {
       color: #fff;
     }
+}
+
+a.back-to-all {
+  color: #fff;
+  font-size: 0.9em;
+  text-decoration: none;
 }

@@ -1,0 +1,32 @@
+// ==========================================================================
+//
+// Backend
+//
+//
+
+.backend-toolbar {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  background: #fff;
+}
+
+.backend-container {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.projects-holder {
+  padding-top: 150px;
+}
+
+.backend-project {
+  border-top: 1px solid $colour_lightestgrey;
+  padding: 20px 0px;
+
+  &:last-child {
+    border-bottom: 1px solid $colour_lightestgrey;
+  }
+}

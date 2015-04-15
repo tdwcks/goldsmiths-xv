@@ -49,6 +49,10 @@ body {
   margin: 0;
 }
 
+.background-white {
+  background: #fff;
+}
+
 img,
 iframe {
     width:100%;
@@ -56,11 +60,13 @@ iframe {
 }
 
 ::-moz-selection {
-  color: #fff;
+  color: #000;
+  background: rgba(255, 255, 255, 0.99);
   text-shadow: none;
 }
 
 ::selection {
-  color: #fff;
+  color: #000;
+  background: rgba(255, 255, 255, 0.99);
   text-shadow: none;
 }

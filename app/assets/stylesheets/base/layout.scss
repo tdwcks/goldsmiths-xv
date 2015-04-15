@@ -7,7 +7,7 @@
 .layout-container {
   display: block;
   margin: 0px auto;
-  width: 75%;
+  @include calc(width, "100% - 300px");
   position: relative;
 }
 
@@ -43,8 +43,8 @@
   display: none;
 
   &.active--project--expand {
-    @include animation(north--in 0.7s forwards);
     display: block;
+    @include animation(north--in 1s forwards);
   }
 }
 

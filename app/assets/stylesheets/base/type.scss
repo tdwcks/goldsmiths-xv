@@ -16,7 +16,7 @@ $base_font_size: 18px;
 h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
-  font-weight: normal;
+  font-weight: 200;
   position: relative;
 }
 
@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-    color: $colour_dark;
+    color: #fff;
     font-size: 2.5em;
     line-height: 1.2em;
 }
@@ -35,16 +35,17 @@ h2 {
 h3 {
     font-size: 2em;
     line-height: 1.125em;
+    color: $colour_lightgrey;
 
     &.section-title {
-      font-size: 1em;
-      padding-top: 50px;
-      padding-bottom: 25px;
+      padding-top: 75px;
+      padding-bottom: 0px;
+      text-align: center;
       color: $colour_lightgrey;
       position: relative;
 
       &:after {
-        content: "54";
+        content: "03";
         display: inline;
         font-size: 10px;
         letter-spacing: 1px;
@@ -53,17 +54,33 @@ h3 {
         padding-right: 10px;
       }
     }
+
+    &.backend-project-link a {  
+      color: $colour_dark;
+      text-decoration: none;
+      border-bottom: 2px solid $colour_dark;
+      margin-bottom: 25px;
+    }
 }
 
 h4 {
     color: $colour_dark;
     font-size: 1.875em;
     line-height: 1.2em;
+    padding-bottom: 18px;
+    color: $colour_lightestgrey;
 
     &.expanded-project-name {
       font-size: 0.9em;
       color: $colour_lightestgrey;
       margin-bottom: 20px;
+    }
+
+    &.backend-project-designer {
+      font-size: 1.2em;
+      color: $colour_midgrey;
+      margin-bottom: 20px;
+      padding: 25px 0px 0px 0px;
     }
 }
 
@@ -113,6 +130,34 @@ p {
     line-height: 1.7em;
     padding-bottom: 10px;
   }
+
+  &.type-smallest {
+    color: $colour_lightestgrey;
+    font-size: 0.9em;
+    margin-top: 0;
+    line-height: 1.8em;
+    padding-bottom: 10px;
+  }
+
+  &.type-large-full {
+    width: 100%;
+    font-size: 1.875em;
+    color: $colour_lightestgrey;
+    text-align: left;
+    padding-bottom: 25px;
+  }
+
+  &.backend-project-description {
+    width: 100%;
+    font-size: 1em;
+    color: $colour_midgrey;
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+span {
+  font-weight: 100;
 
 }
 

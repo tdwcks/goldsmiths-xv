@@ -1,10 +1,37 @@
-<p>
-  Admin actions: <%= link_to 'New Book', new_project_path %>
-</p>
+<div class="background-white">
 
-<% for project in @projects do %>
-  <h2><%= project.title %></h2>
-  <p><%= project.description %></p>
-  <b> <%= link_to 'Show', {:action => "show", :id => project.id} %></b>
-  <b> <%= link_to 'Edit', {:action => "edit", :id => project.id} %></b>
-<% end %>
+	<div class="backend-toolbar">
+
+		<div class="backend-container">
+			<p><%= link_to "Back To Site", projects_path %></p>
+			<p><%= link_to "Add a Project", new_project_path %></p>
+		</div>
+
+	</div>
+
+	<div class="backend-container">
+
+		<div class="projects-holder">
+
+			<% for project in @projects do %>
+
+			<div class="backend-project">
+
+			  <h3 class="backend-project-link"><%= link_to project.title, edit_project_path(project.id) %></h3>
+			  
+			  <h4 class="backend-project-designer"><%= project.designer %></h4>
+
+			  <p class="backend-project-description"><%= project.description %></p>
+
+			  <a class="backend-edit-button"><%= link_to edit_project_path %></a>
+
+
+			</div>
+
+			<% end %>
+
+		</div>
+
+	</div>
+
+</div>

@@ -8,6 +8,9 @@ ul.list-all-designers {
   color: #fff;
   font-weight: 100;
   padding: 0;
+  padding-bottom: 50px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
 
   li {
     list-style-type: none;
@@ -17,14 +20,15 @@ ul.list-all-designers {
     position: relative;
     cursor: pointer;
 
-    span {
+    a {
       margin: 0;
       padding: 0;
       position: relative;
       display: inline;
       top: 0;
-      font-weight: 100;
+      outline: 0;
       font-size: 0.9em,
+
     }
 
     .list-designer-name {

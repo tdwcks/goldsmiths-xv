@@ -78,12 +78,15 @@
 
 					<div class="layout-one-column-grid">
 
-						<h4 class="expanded-project-name"><%= project.title %></h4>
-						<h5 class="expanded-designer-name"><%= project.designer %></h4>
+						<a href="#" class="back-to-all">Back To All</a>
 
 					</div>
 
-					<div class="layout-one-column-grid"></div>
+					<div class="layout-one-column-grid">
+
+						<h4 class="expanded-project-name"><%= project.title %></h4>
+						<h5 class="expanded-designer-name"><%= project.designer %></h4>
+					</div>
 
 					<div class="layout-two-column-grid column-right">
 
@@ -118,8 +121,8 @@
 					<% @projects.limit(12).each do |project| %>
 
 					<li name="project-<%= project.id %>">
-			  			<span class="list-designer-name"><%= project.designer %></span>	
-			  			<span class="list-project-name"><%= project.title %></span>		
+			  			<a class="list-designer-name"><%= project.designer %></a>	
+			  			<a class="list-project-name"><%= project.title %></a>		
 			  		</li>
 
 					<% end %>
@@ -136,10 +139,11 @@
 
 				<% @projects.offset(12).limit(12).each do |project| %>
 
-				<li>
-		  			<span class="list-designer-name"><%= project.designer %></span>	
-		  			<span class="list-project-name"><%= project.title %></span>	
-		  		</li>
+				<li name="project-<%= project.id %>">
+
+		  			<a class="list-designer-name"><%= project.designer %></a>	
+		  			<a class="list-project-name"><%= project.title %></a>		
+			  	</li>
 
 				<% end %>
 
@@ -153,10 +157,11 @@
 
 				<% @projects.offset(24).limit(12).each do |project| %>
 
-				<li>
-		  			<span class="list-designer-name"><%= project.designer %></span>
-		  			<span class="list-project-name"><%= project.title %></span>	
-		  		</li>
+				<li name="project-<%= project.id %>">
+
+		  			<a class="list-designer-name"><%= project.designer %></a>	
+		  			<a class="list-project-name"><%= project.title %></a>		
+			  	</li>
 
 				<% end %>
 
@@ -170,10 +175,11 @@
 
 				<% @projects.offset(36).limit(12).each do |project| %>
 
-				<li>
-		  			<span class="list-designer-name"><%= project.designer %></span>
-		  			<span class="list-project-name"><%= project.title %></span>	
-		  		</li>
+				<li name="project-<%= project.id %>">
+
+		  			<a class="list-designer-name"><%= project.designer %></a>	
+		  			<a class="list-project-name"><%= project.title %></a>		
+			  	</li>
 
 				<% end %>
 
@@ -188,6 +194,27 @@
 </article>
 
 <article class="layout-about">
+
+	<div class="layout-container">
+
+		<h3 class="section-title">About</h3>
+
+		<p class="type-large-full">It is meaningless to define the exact location of a particle or it’s nucleus in the moment of observation. They are in constant movement and continuously entering new constellations.</p>
+
+		<div class="layout-two-column-grid">
+
+			<h4>Opening Dates</h3>
+
+			<span></span>
+
+			<p class="type-smallest">Programme 2015–2016 Sandberg Instituut’s Fine Arts department retains a focus on autonomy and making, while addressing the social and economic roles of art production. The programme structurally redefines conventional notions of artistic labour in three open modules: Language, Image and Play/ Object. A main tutor develops the curriculum of each of these modules over the course of two years. Throughout this period, the Sandberg Instituut functions as a base, while encouraging each programme to modify and manifest itself both internally and externally.</p>
+
+			<p class="type-smallest">Programme 2015–2016 Sandberg Instituut’s Fine Arts department retains a focus on autonomy and making, while addressing the social and economic roles of art production. The programme structurally redefines conventional notions of artistic labour in three open modules: Language, Image and Play/ Object. A main tutor develops the curriculum of each of these modules over the course of two years. Throughout this period, the Sandberg Instituut functions as a base, while encouraging each programme to modify and manifest itself both internally and externally.</p>
+
+
+		</div>
+
+	</div>
 
 </article>
 

@@ -4,8 +4,12 @@
 //
 //
 
+header {
+	z-index: 10;
+}
+
 .button-menu {
-   z-index: 500;
+   z-index: 10000;
 }
 
 .layout-menu {

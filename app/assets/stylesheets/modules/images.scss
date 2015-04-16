@@ -4,16 +4,7 @@
 //
 //
 
-.restuarant-image-circle {
-  width: 75px;
-  height: 75px;
-  background: $colour_midgrey;
-  @include border-radius(100px);
-  border: 2px solid $colour_lightgrey;
-  float: left;
-  margin-right: 15px;
-
-  img {
-    height: 100%;
-  }
+.image-projects {
+  padding: 25px 0;
+  display: block;
 }

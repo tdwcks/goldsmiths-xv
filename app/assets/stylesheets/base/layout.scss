@@ -28,23 +28,32 @@
 }
 
 .layout-two-column-grid {
-  float: right;
    @include calc(width, "50% - 14px");
 }
 
 .layout-column-right {
   margin-right: 0px;
+  float: right;
+}
+
+.layout-clear {
+  clear: both;
 }
 
 .layout-project-expanded {
   width: 100%;
   clear: both;
-  height: 100%;
+  min-height: 100%;
   display: none;
+  padding-bottom: 25px;
 
   &.active--project--expand {
     display: block;
     @include animation(north--in 1s forwards);
+  }
+
+  &.active--project--collapse {
+    @include animation(north--out 1s forwards);
   }
 }
 
@@ -52,6 +61,6 @@
   width: 100%;
   padding-top: 35px;
   display: block;
-  height: 20px;
+  min-height: 100%;
   clear: both;
 }

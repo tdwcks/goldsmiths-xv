@@ -1,3 +1,7 @@
+<header>
+
+</header>
+
 <div class="button-menu">
 
 	<a class="button-menu-trigger" href="">Menu</a>
@@ -78,7 +82,7 @@
 
 					<div class="layout-one-column-grid">
 
-						<a href="#" class="back-to-all">Back To All</a>
+						<a href="#" class="back-to-all" id="project-<%= project.id %>">Close Project</a>
 
 					</div>
 
@@ -88,7 +92,7 @@
 						<h5 class="expanded-designer-name"><%= project.designer %></h4>
 					</div>
 
-					<div class="layout-two-column-grid column-right">
+					<div class="layout-two-column-grid layout-column-right">
 
 						<p class="expanded-project-description">
 							<%= project.description %>
@@ -102,7 +106,11 @@
 
 					<div class="layout-project-pictures">
 
-						<img src="images/db-img/project<%= project.id %>/img_1.jpg"/>
+						<img class="lazy image-projects" data-original="assets/db-img/project<%= project.id %>/1.jpg" src="assets/grey.gif"/>
+
+						<img class="lazy image-projects" data-original="assets/db-img/project<%= project.id %>/2.jpg" src="assets/grey.gif"/>
+
+						<img class="lazy image-projects" data-original="assets/db-img/project<%= project.id %>/3.jpg" src="assets/grey.gif"/>
 
 					</div>
 
@@ -201,17 +209,13 @@
 
 		<p class="type-large-full">It is meaningless to define the exact location of a particle or it’s nucleus in the moment of observation. They are in constant movement and continuously entering new constellations.</p>
 
-		<div class="layout-two-column-grid">
+		<div class="layout-two-column-grid layout-column-right">
 
-			<h4>Opening Dates</h3>
+			<h4>Opening Times</h4>
 
-			<span></span>
+			<p class="type-smallest">Programme 2015–2016 Sandberg Instituut’s Fine Arts department retains a focus on autonomy and making, while addressing the social and economic roles of art production. The programme structurally redefines conventional notions of artistic labour in three open modules: Language, Image and Play.</p>
 
-			<p class="type-smallest">Programme 2015–2016 Sandberg Instituut’s Fine Arts department retains a focus on autonomy and making, while addressing the social and economic roles of art production. The programme structurally redefines conventional notions of artistic labour in three open modules: Language, Image and Play/ Object. A main tutor develops the curriculum of each of these modules over the course of two years. Throughout this period, the Sandberg Instituut functions as a base, while encouraging each programme to modify and manifest itself both internally and externally.</p>
-
-			<p class="type-smallest">Programme 2015–2016 Sandberg Instituut’s Fine Arts department retains a focus on autonomy and making, while addressing the social and economic roles of art production. The programme structurally redefines conventional notions of artistic labour in three open modules: Language, Image and Play/ Object. A main tutor develops the curriculum of each of these modules over the course of two years. Throughout this period, the Sandberg Instituut functions as a base, while encouraging each programme to modify and manifest itself both internally and externally.</p>
-
-
+			<p class="type-smallest">Programme 2015–2016 Sandberg Instituut’s Fine Arts department retains a focus on autonomy and making, while addressing the social and economic roles of art production. The programme structurally redefines conventional notions of artistic labour in three open modules: Language, Image and Play.</p>
 		</div>
 
 	</div>
@@ -220,9 +224,54 @@
 
 <article class="layout-gallery">
 
+	<h3 class="section-title absolute">Gallery</h3>
+
+	<div id="slider">
+
+	  <a href="#" class="control-next">dedne</a>
+	  <a href="#" class="control-prev">dede</a>
+
+	  <ul>
+	    <li><img src="assets/db-img/project3/1.jpg"/></li>
+	    <li></li>
+	  </ul>
+
+	</div>
+
+</article>
+
+<article class="layout-press">
+
+	<div class="layout-container">
+
+		<h3 class="section-title">Press</h3>
+
+		<p class="type-large-full">It is meaningless to define the exact location of a particle or it’s nucleus in the moment of observation. They are in constant movement and continuously entering new constellations.</p>
+
+		<div class="layout-two-column-grid layout-column-right">
+
+			<h4>Press Downloads</h4>
+
+			<p class="type-smallest">You can download images of our work by visiting the work section of our website, clicking on any project page, and clicking “download low resolution images” at the bottom of each page next to the credits. If you are writing an article about us online, you are free to use images of our work on your website or blog if you use proper credits.</p>
+
+		</div>
+
+		<div class="layout-two-column-grid layout-clear">
+
+			<a href="#" class="download-button">Download Assets</a>
+		</div>
+
+	</div>
+
 </article>
 
 <article class="layout-contact">
+
+	<h3 class="section-title">Contact</h3>
+
+	<div class="layout-container">
+
+	</div>
 
 </article>
 

@@ -4,71 +4,156 @@
 //
 //
 
-.simple_form {
-  div.input {
-    margin-bottom: 10px;
-    clear: both;
-    /* Required for Webkit, but not for Gecko */
+div {
+  width: 100%;
+  position: relative;
+
+    label {
+      clear: both;
+      display: block;
+      font-size: 1em;
+      font-family: $main_font;
+    }
   }
-  label {
+
+  input[type=text] {
+    border-radius: 0;
+    margin: 1.5em 0em 1.5em 0em;
+    -webkit-appearance: none;
+    text-align: left;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1em;
+    display: block; 
+    color: darken(#fff, 70%);
+    @include calc(width, "100% - 40px");
+    background: darken(#fff, 10%);
+    font-family: $main_font;
+    font-weight: 300;
+
+    &:focus {
+      color: #fff;
+      outline: 0;
+      background: darken(#fff, 70%);
+    }        
+  }
+
+  input[type=email] {
+    border-radius: 0;
+    margin: 1.5em 0em 1.5em 0em;
+    -webkit-appearance: none;
+    text-align: left;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1em;
+    display: block; 
+    color: darken(#fff, 70%);
+    @include calc(width, "100% - 40px");
+    background: darken(#fff, 10%);
+    font-family: $main_font;
+    font-weight: 300;
+    @include transition(all, 0.3s, ease-in-out);
+
+    &:focus {
+      color: #fff;
+      outline: 0;
+      background: darken(#fff, 70%);
+    }   
+  }
+
+  input[type=url] {
+    border-radius: 0;
+    margin: 1.5em 0em 1.5em 0em;
+    -webkit-appearance: none;
+    text-align: left;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1em;
+    display: block; 
+    color: darken(#fff, 70%);
+    @include calc(width, "100% - 40px");
+    background: darken(#fff, 10%);
+    font-family: $main_font;
+    font-weight: 300;
+    @include transition(all, 0.3s, ease-in-out);
+
+    &:focus {
+      color: #fff;
+      outline: 0;
+      background: darken(#fff, 70%);
+    }   
+  }
+
+  textarea {
+    border-radius: 0;
+    margin: 1.5em 0em 1.5em 0em;
+    -webkit-appearance: none;
+    text-align: left;
+    border: none;
+    padding: 20px 20px;
+    font-size: 1em;
+    display: block;
+    line-height: 1.7em;
     float: left;
-    width: 100px;
-    text-align: right;
-    margin: 2px 10px;
+    resize: none;
+    color: darken(#fff, 70%);
+    @include calc(width, "100% - 40px");
+    background: darken(#fff, 10%);
+    font-family: $main_font;
+    font-weight: 300;
+    @include transition(all, 0.3s, ease-in-out);
+
+    &:focus {
+      color: #fff;
+      outline: 0;
+      background: darken(#fff, 70%);
+    }    
   }
-}
 
-div.boolean, .simple_form input[type='submit'] {
-  margin-left: 120px;
-}
+  .studio_latitude {
+    width: 48%;
+    float: left;
+  }
 
-div.boolean label {
-  float: none;
+  .studio_longitude {
+    clear: none;
+    margin-left: 4%;
+    width: 48%;
+    float: left;
+  }
+
+  fieldset.half {
+    width: 48%;
+  }
+
+  fieldset.right {
+    margin-left: 4%;
+  }
+
+
+input[type=submit] {
+  right: 0;
+  top: 0;
+  background: darken(#fff, 80%);
+  color: #fff;
+  display: block;
   margin: 0;
-}
+  margin-top: 10px;
+  border-radius: 0;
+  -webkit-appearance: none;
+  padding: 5px 20px 5px 20px;
+  border: 0;
+  width: 180px;
+  line-height: 1em;
+  font-size: 1.1em;
+  font-family: $main_font;
+  font-weight: 300;
+  float: right;
+  clear: both;
+  height: 55px;
+  position: relative;
 
-label.collection_radio_buttons {
-  float: none;
-  margin: 0;
-  margin-right: 10px;
-  vertical-align: -2px;
-  margin-left: 2px;
-}
-
-.field_with_errors {
-  background-color: #ff3333;
-}
-
-.simple_form {
-  .error {
-    clear: left;
-    color: black;
-    display: block;
-    margin-left: 120px;
-  }
-  .hint {
-    clear: left;
-    margin-left: 120px;
-    color: #555;
-    display: block;
-    font-style: italic;
-  }
-}
-
-input {
-  &.radio {
-    margin-right: 5px;
-    vertical-align: -3px;
-  }
-  &.check_boxes {
-    margin-left: 3px;
-    vertical-align: -3px;
-  }
-}
-
-label.collection_check_boxes {
-  float: none;
-  margin: 0;
-  vertical-align: -2px;
-  margin-left: 2px;
+  &:hover {
+    background-color: $colour_green;
+  }        
 }

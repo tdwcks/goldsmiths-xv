@@ -16,6 +16,20 @@ $(document).on('click', '.button-menu-trigger', function(e) {
 	}
  })
 
+// Click anywhere to close menu
+
+$('html').click(function() {
+	
+});
+
+// Lazy Load
+
+$(function() {
+    $("img.lazy").lazyload({
+        event : "load_images"
+    });
+});
+
 // Designer Expand 
 
 $(document).on('click', '.list-all-designers li', function(e) {
@@ -31,9 +45,16 @@ $(document).on('click', '.list-all-designers li', function(e) {
 	else {
 		$('body').addClass('active--project--expand');
 		$('#' + selected_designer).addClass('active--project--expand');
-	}
+		$('#' + selected_designer + " img.lazy").trigger("load_images")
+	}	
+ })
 
-	
+// Designer Close
+
+$(document).on('click', '.layout-designer-expanded .layout-one-column-grid .back-to-all', function(e) {
+	e.preventDefault(); 
+		$('.layout-project-expanded').removeClass('active--project--expand');
+		$('body').removeClass('menu--active');	
  })
 
 // Scroll To Class Menu Function 
@@ -48,3 +69,4 @@ $(document).on('click', '.menu-item-link', function(e) {
     e.preventDefault(); 
     goToByScroll($(this).attr("id"));           
 });
+

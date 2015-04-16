@@ -23,7 +23,7 @@ class ProjectsController < ApplicationController
 	  @project = Project.new(params.require(:project).permit(:title, :designer, :url, :email, :image_folder, :description))
 	  if @project.save
 	    flash[:notice] = "#{@project.title} saved."
-	    redirect_to  :action => 'index'
+	    redirect_to  :action => 'list'
 	  else
 	    render :new
 	  end
@@ -37,7 +37,7 @@ class ProjectsController < ApplicationController
 	  @project = Project.find params[:id]
 	  if @project.update_attributes(params.require(:project).permit(:title, :designer, :url, :email, :image_folder, :description))
 	    flash[:notice] = "#{@project.title} saved."
-	    redirect_to  :action => 'index'
+	    redirect_to  :action => 'list'
 	  else
 	    render :edit
 	  end
@@ -46,6 +46,6 @@ class ProjectsController < ApplicationController
 	def destroy
 	  @project = Project.find (params[:id])
 	  @project.destroy
-	 redirect_to  :action => 'index'
+	 redirect_to  :action => 'list'
 	end
 end

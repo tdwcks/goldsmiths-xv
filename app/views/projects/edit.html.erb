@@ -1,15 +1,35 @@
- 
-<%= simple_form_for (@project) do |form| %>
-    <%= form.input :title, label: "Project Title" %>
-  <%= form.input :designer, label: "Designer Name" %>
-  <%= form.input :url, label: "Designer / Project Website" %>
-  <%= form.input :email, label: "Designers Email" %>
-  <%= form.input :image_folder, label: "image_folder" %>
-  <%= form.input :description, :as => :text, label: "Description" %>
-  <%= form.button :submit %>
-<% end %>
+ <div class="background-white">
 
-<p>
-  Admin Actions: 
-  <%= link_to 'Delete', project_path(@project), :method => :delete, :confirm => "Are you sure?" %>
-</p>
+	<div class="backend-toolbar">
+
+		<div class="backend-container">
+			<p><%= link_to "Back To Site", projects_path %></p>
+			<p><%= link_to "Add a Project", new_project_path %></p>
+		</div>
+
+	</div>
+
+	<div class="backend-container">
+
+		<div class="projects-holder">
+
+
+		<%= simple_form_for (@project) do |form| %>
+			  <%= form.input :title, label: "Project Title" %>
+			  <%= form.input :designer, label: "Designer Name" %>
+			  <%= form.input :url, label: "Designer / Project Website" %>
+			  <%= form.input :email, label: "Designers Email" %>
+			  <%= form.input :image_folder, label: "image_folder" %>
+			  <%= form.input :description, label: "Description", as: :text, :input_html => {:rows => 10} %>
+			  <%= form.button :submit %>
+		<% end %>
+
+		<p>
+		  <%= link_to 'Delete', project_path(@project), :method => :delete, :confirm => "Are you sure?" %>
+		</p>
+
+		</div>
+
+	</div>
+
+</div>

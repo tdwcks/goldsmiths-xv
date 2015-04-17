@@ -21,20 +21,20 @@
 
 .layout-designers {
   width: 100%;
+  height: 100vh;
   padding-top: 0 50px;
 
   .layout-designer-expanded {
     width: 100%;
     clear: both;
-    min-height: 100%;
   }
 
   .layout-designer-list {
-    width: 100%;
     display: block;
+    width: 100%;
 
     .active--project--expand & {
-     
+      display: none;
     }
   }
 }

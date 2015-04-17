@@ -1,16 +1,6 @@
 <header>
 
-</header>
-
-<div class="button-menu">
-
-	<a class="button-menu-trigger" href="">Menu</a>
-
-</div>
-
-<div class="layout-menu">
-
-	<div class="menu-container">
+	<div class="layout-container">
 
 		<nav class="main-menu">
 
@@ -18,44 +8,20 @@
 				
 				<li class="menu-item">
 
-					<span class="menu-superscript">01</span>
-					<a id="layout-hero" class="menu-item-link" href="">Home</a>
+					<a id="layout-hero" class="menu-item-link menu--item--active" href="">About</a>
 
 				</li>
 
 				<li class="menu-item">
 				
-					<span class="menu-superscript">02</span>
-					<a id="layout-designers" class="menu-item-link" href="">Designers</a>
+					<a id="layout-designers" class="menu-item-link" href="">Manifesto</a>
 
 				</li>
 
 				<li class="menu-item">
 
-					<span class="menu-superscript">03</span>
-					<a id="layout-about" class="menu-item-link" href="">About</a>
+					<a id="layout-about" class="menu-item-link" href="">People</a>
 
-				</li>
-
-				<li class="menu-item">
-
-					<span class="menu-superscript">04</span>
-					<a id="layout-gallery" class="menu-item-link" href="">Gallery</a>
-					
-				</li>
-
-				<li class="menu-item">
-
-					<span class="menu-superscript">05</span>
-					<a id="layout-press" class="menu-item-link" href="">Press</a>
-					
-				</li>
-
-				<li class="menu-item">
-
-					<span class="menu-superscript">06</span>
-					<a id="layout-contact" class="menu-item-link" href="">Contact</a>
-					
 				</li>
 		
 			</ul>
@@ -64,9 +30,28 @@
 
 	</div>
 
-</div>
+</header>
 
 <article class="layout-hero">
+
+	<div class="layout-container">
+
+		<div class="layout-one-column-grid">
+
+			<div class="hero-type-block layout-hero-about">
+
+				<p class="type-hero">Lorem ipsum dolor sit amet, consectet adipiscing elit. Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Lorem ipsum dolor sit amet, consectet adipiscing elit. Proin risus. </p>
+
+				<span class="event-date">Friday, 21st June 2015</span>
+				<span class="event-details">Old Truman Brewery</span>
+				<span class="event-details">91 Brick Lane, London, E1 6QL</span>
+				<a href="http://citymapper.com/directions?endcoord=51.52118,-0.07186000000001513&endname=Old%20Truman%20Brewery&endaddress=Brick%20Lane
+" class="link-get-directions">Get Directions on CityMapper</a>
+			</div>
+
+		</div>
+
+	</div>
 
 </article>
 
@@ -80,16 +65,40 @@
 
 				<div id="project-<%= project.id %>" class="layout-project-expanded">
 
-					<div class="layout-one-column-grid">
+					<div class="layout-two-column-grid">
 
 						<a href="#" class="back-to-all" id="project-<%= project.id %>">Close Project</a>
+						
+						<h4 class="expanded-project-name"><%= project.title %> - <%= project.designer %></h4>
 
-					</div>
+						<div class="swiper-container">
 
-					<div class="layout-one-column-grid">
+							<div class="swiper-wrapper">
 
-						<h4 class="expanded-project-name"><%= project.title %></h4>
-						<h5 class="expanded-designer-name"><%= project.designer %></h4>
+					            <div class="swiper-slide">
+
+					            	<img class="lazy image-projects" data-original="assets/db-img/project<%= project.id %>/1.jpg" src="assets/grey.gif"/>
+
+					            </div>
+
+					            <div class="swiper-slide">
+
+					            	<img class="lazy image-projects" data-original="assets/db-img/project<%= project.id %>/2.jpg" src="assets/grey.gif"/>
+
+					            </div>
+
+					            <div class="swiper-slide">
+
+					            	<img class="lazy image-projects" data-original="assets/db-img/project<%= project.id %>/1.jpg" src="assets/grey.gif"/>
+
+					            </div>
+					        
+					        </div>
+
+							    <div class="swiper-pagination"></div>
+
+						</div>
+
 					</div>
 
 					<div class="layout-two-column-grid layout-column-right">
@@ -101,16 +110,6 @@
 						<a href="mailto:<%= project.email %>?Subject=Great%20Project!" class="expanded-email">Email Designer</a>
 
 						<a class="expanded-url" href="<%= project.url %>">Visit Website</a>
-
-					</div>
-
-					<div class="layout-project-pictures">
-
-						<img class="lazy image-projects" data-original="assets/db-img/project<%= project.id %>/1.jpg" src="assets/grey.gif"/>
-
-						<img class="lazy image-projects" data-original="assets/db-img/project<%= project.id %>/2.jpg" src="assets/grey.gif"/>
-
-						<img class="lazy image-projects" data-original="assets/db-img/project<%= project.id %>/3.jpg" src="assets/grey.gif"/>
 
 					</div>
 

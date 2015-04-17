@@ -3,3 +3,27 @@
 // Links
 //
 //
+
+.link-get-directions {
+	font-size: 0.7em;
+	color: $colour_lightestgrey;
+	text-decoration: none;
+	display: block;
+	padding: 21px 0;
+	@include transition(all, 0.3s, ease-in-out);
+
+	&:hover {
+		color: #fff;
+	}
+}
+
+.back-to-all {
+	padding-bottom: 30px;
+	display: block;
+	font-size: 0.7em;
+	color: $colour_lightestgrey;
+
+	&:hover {
+		color: #fff;
+	}
+}

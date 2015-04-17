@@ -16,9 +16,18 @@ ul.list-all-designers {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    margin-bottom: 35px;
+    padding: 18px 0px;
     position: relative;
     cursor: pointer;
+    
+
+    &:hover > .list-designer-name  {
+      opacity: 0;
+    }
+
+     &:hover > .list-project-name  {
+      opacity: 1;
+    }
 
     a {
       margin: 0;
@@ -27,16 +36,20 @@ ul.list-all-designers {
       display: inline;
       top: 0;
       outline: 0;
-      font-size: 0.9em,
-
+      font-size: 0.9em;
+      @include transition(all, 0.5s, ease-in-out);
     }
 
     .list-designer-name {
-      color: #fff;
+      color: #fff;  
     }
 
     .list-project-name {
-      color: $colour_lightgrey;
+      color: #fff;
+      position: absolute;
+      top: 18px;
+      left: 0;
+      opacity: 0;
     }
   }
 }

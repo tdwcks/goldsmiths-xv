@@ -7,7 +7,7 @@
 .layout-container {
   display: block;
   margin: 0px auto;
-  @include calc(width, "100% - 300px");
+  @include calc(width, "90%");
   position: relative;
 }
 
@@ -28,6 +28,7 @@
 }
 
 .layout-two-column-grid {
+  float: left;
    @include calc(width, "50% - 14px");
 }
 
@@ -44,8 +45,8 @@
   width: 100%;
   clear: both;
   min-height: 100%;
-  display: none;
   padding-bottom: 25px;
+  display: none;
 
   &.active--project--expand {
     display: block;
@@ -55,6 +56,11 @@
   &.active--project--collapse {
     @include animation(north--out 1s forwards);
   }
+}
+
+.hero-type-block {
+  margin-top: 150px;
+  display: block;
 }
 
 .layout-project-pictures {

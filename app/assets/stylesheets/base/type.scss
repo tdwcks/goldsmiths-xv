@@ -53,7 +53,7 @@ h4 {
     color: $colour_lightestgrey;
 
     &.expanded-project-name {
-      font-size: 0.9em;
+      font-size: 1em;
       color: $colour_lightestgrey;
       margin-bottom: 20px;
     }
@@ -107,9 +107,19 @@ p {
 
   &.expanded-project-description {
     color: $colour_lightestgrey;
-    font-size: 1.25em;
+    font-size: 1em;
     margin-top: 0;
     line-height: 1.7em;
+    padding-bottom: 10px;
+    margin-top: 100px;
+  }
+
+  &.type-hero {
+    color: $colour_lightestgrey;
+    font-size: 0.9em;
+    margin-top: 0;
+    color: $colour_lightgrey;
+    line-height: 1.8em;
     padding-bottom: 10px;
   }
 
@@ -140,6 +150,24 @@ p {
 
 span {
   font-weight: 100;
+
+  &.event-date {
+    color: #fff;
+    display: block;
+    padding: 10px 0 22px 0;
+    font-size: 1em;
+  }
+
+  &.event-details {
+    color: #fff;
+    display: block;
+    padding: 10px 0px;
+    font-size: 0.9em;
+
+    &:last-child {
+      padding-bottom: 500px;
+    }
+  }
 }
 
 

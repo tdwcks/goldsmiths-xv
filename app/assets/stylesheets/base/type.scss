@@ -37,37 +37,6 @@ h3 {
     line-height: 1.125em;
     color: $colour_lightgrey;
 
-    &.section-title {
-      padding-top: 75px;
-      padding-bottom: 0px;
-      text-align: center;
-      color: $colour_lightgrey;
-      position: relative;
-
-      &:after {
-        content: "03";
-        display: inline;
-        font-size: 10px;
-        letter-spacing: 1px;
-        color: #fff;
-        vertical-align: 60%;
-        padding-right: 10px;
-      }
-    }
-
-    &.section-title.absolute {
-      padding-top:40px;
-      position: absolute;
-      top: 0;
-      z-index: 10000;
-      color: #fff;
-      width: 100%;
-
-      &:after {
-        content: "04";
-      }
-    }
-
     &.backend-project-link a {  
       color: $colour_dark;
       text-decoration: none;

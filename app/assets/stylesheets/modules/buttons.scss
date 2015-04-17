@@ -4,44 +4,6 @@
 //
 //
 
-/* ==========================================================================
-   Hero
-   ========================================================================== */
-
-.button-menu {
-  position: fixed;
-  top: 50px;
-  left: 60px;
-}
-
-.button-menu-trigger {
-  text-transform: uppercase;
-  color: #fff;
-  position: relative;
-  text-decoration: none;
-
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-image: url('../assets/hamburger_white.svg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    top: -8px;
-    left: -30px;
-  }
-
-  .menu--active & {
-    color: #fff;
-
-    &:after {
-      background-image: url('../assets/hamburger_white.svg');
-    }
-  }
-}
-
 a.expanded-url {
     color: $colour_lightgrey;
     font-size: 0.85em;
@@ -69,13 +31,4 @@ a.back-to-all {
   color: #fff;
   font-size: 0.9em;
   text-decoration: none;
-}
-
-a.download-button {
-  padding: 20px 50px;
-  color: #000;
-  text-align: center;
-  text-decoration: none;
-  background: #fff;
-  float: right;
 }

@@ -35,6 +35,30 @@
 
     .active--project--expand & {
       display: none;
+      @include animation(project--out 1s forwards);
+    }
+
+    &.active--project--collapse {
+      @include animation(project--in 1s forwards);
+    }
+  }
+
+  .layout-project-expanded {
+    width: 100%;
+    clear: both;
+    min-height: 100%;
+    padding-top: 33px;
+    padding-bottom: 25px;
+    display: none;
+
+    &.active--project--expand {
+      display: block;
+      @include animation(project--in 1s forwards);
+    }
+
+    &.active--project--collapse {
+      display: none;
+      @include animation(project--out 1s forwards);
     }
   }
 }

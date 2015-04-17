@@ -32,6 +32,11 @@
    @include calc(width, "50% - 14px");
 }
 
+.layout-three-column-grid {
+  float: left;
+   @include calc(width, "75% - 14px");
+}
+
 .layout-column-right {
   margin-right: 0px;
   float: right;
@@ -41,32 +46,7 @@
   clear: both;
 }
 
-.layout-project-expanded {
-  width: 100%;
-  clear: both;
-  min-height: 100%;
-  padding-bottom: 25px;
-  display: none;
-
-  &.active--project--expand {
-    display: block;
-    @include animation(north--in 1s forwards);
-  }
-
-  &.active--project--collapse {
-    @include animation(north--out 1s forwards);
-  }
-}
-
-.hero-type-block {
+.layout-clear-top {
   margin-top: 150px;
   display: block;
-}
-
-.layout-project-pictures {
-  width: 100%;
-  padding-top: 35px;
-  display: block;
-  min-height: 100%;
-  clear: both;
 }

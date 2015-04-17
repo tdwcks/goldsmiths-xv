@@ -4,77 +4,21 @@
 //
 //
 
-@include keyframes(north--in) {
+@include keyframes(project--in) {
   from {
-    @include transform(translateY(200px));
     opacity: 0;
   }
   to {
-    @include transform(translateY(0px));
     opacity: 1;
   }
 }
 
-@include keyframes(east--in) {
+
+@include keyframes(project--out) {
   from {
-   	@include transform(translateX(200px));
-   	opacity: 0;
+    opacity: 1;
   }
   to {
-    @include transform(translateX(0));
-    opacity: 1;
-  }
-}
-
-@include keyframes(south--in) {
-  from {
-    @include transform(translateY(-100px));
     opacity: 0;
-  }
-  to {
-    @include transform(translateY(0px));
-    opacity: 1;
-  }
-}
-
-@include keyframes(west--in) {
-  from {
-    @include transform(translateX(-370px));
-    opacity: 0;
-  }
-  to {
-    @include transform(translateX(0));
-    opacity: 1;
-  }
-}
-
-@include keyframes(north--out) {
-  from {
-    @include transform(translateY(0px));
-  }
-  to {
-    @include transform(translateY(300px));
-  }
-}
-
-@include keyframes(east--out) {
-  from {
-   	@include transform(translateX(125px));
-   	opacity: 1;
-  }
-  to {
-    @include transform(translateX(0));
-    opacity: 1;
-  }
-}
-
-@include keyframes(west--out) {
-  from {
-    @include transform(translateX(0));
-    opacity: 1;
-  }
-  to {
-    @include transform(translateX(-370px));
-    opacity: 1;
   }
 }

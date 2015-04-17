@@ -20,7 +20,7 @@
 
 				<li class="menu-item">
 
-					<a id="layout-about" class="menu-item-link" href="">People</a>
+					<a id="layout-designers" class="menu-item-link" href="">People</a>
 
 				</li>
 		
@@ -38,7 +38,7 @@
 
 		<div class="layout-one-column-grid">
 
-			<div class="hero-type-block layout-hero-about">
+			<div class="hero-type-block layout-clear-top">
 
 				<p class="type-hero">Lorem ipsum dolor sit amet, consectet adipiscing elit. Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Lorem ipsum dolor sit amet, consectet adipiscing elit. Proin risus. </p>
 
@@ -48,6 +48,14 @@
 				<a href="http://citymapper.com/directions?endcoord=51.52118,-0.07186000000001513&endname=Old%20Truman%20Brewery&endaddress=Brick%20Lane
 " class="link-get-directions">Get Directions on CityMapper</a>
 			</div>
+
+		</div>
+
+		<div class="layout-three-column-grid layout-clear-top">
+
+		</div>
+
+		<div class="layout-one-column-grid layout-clear-top">
 
 		</div>
 
@@ -77,25 +85,26 @@
 
 					            <div class="swiper-slide">
 
-					            	<img class="lazy image-projects" data-original="assets/db-img/project<%= project.id %>/1.jpg" src="assets/grey.gif"/>
+					            	<img class="image-projects" src="assets/db-img/project<%= project.id %>/1.jpg"/>			          
+					            </div>
+
+					            <div class="swiper-slide">
+
+					            	<img class="image-projects" src="assets/db-img/project<%= project.id %>/2.jpg"/>
 
 					            </div>
 
 					            <div class="swiper-slide">
 
-					            	<img class="lazy image-projects" data-original="assets/db-img/project<%= project.id %>/2.jpg" src="assets/grey.gif"/>
-
-					            </div>
-
-					            <div class="swiper-slide">
-
-					            	<img class="lazy image-projects" data-original="assets/db-img/project<%= project.id %>/1.jpg" src="assets/grey.gif"/>
+					            	<img class="image-projects" src="assets/db-img/project<%= project.id %>/3.jpg"/>
 
 					            </div>
 					        
 					        </div>
 
 							    <div class="swiper-pagination"></div>
+
+
 
 						</div>
 
@@ -110,6 +119,8 @@
 						<a href="mailto:<%= project.email %>?Subject=Great%20Project!" class="expanded-email">Email Designer</a>
 
 						<a class="expanded-url" href="<%= project.url %>">Visit Website</a>
+
+						<img class="lazy image-projects" data-original="assets/db-img/project<%= project.id %>/1.jpg" src="assets/grey.gif"/>
 
 					</div>
 

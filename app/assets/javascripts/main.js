@@ -1,9 +1,7 @@
 // Lazy Load
 
-$
-
     $("img.lazy").lazyload({
-        event : "load_images"
+        event : "loadimages"
     });
 
 // Designer Expand 
@@ -21,7 +19,18 @@ $
 			$('body').addClass('active--project--expand');
 			$('.layout-project-expanded').removeClass('active--project--collapse');
 			$('#' + selected_designer).addClass('active--project--expand');
-			$('#' + selected_designer + " img.lazy").trigger("load_images")
+
+			// Trigger the LazyLoad command
+			$('.active--project--expand img').trigger('loadimages');
+
+			// Activate the Slider. This has to be done here in order to be responsive. Needs to be a DOM element.
+				var mySwiper = new Swiper ('.swiper-container', {
+					pagination: '.swiper-pagination',
+				    paginationClickable: true,
+				    nextButton: '.swiper-button-next',
+        			prevButton: '.swiper-button-prev',
+
+			    });
 		}	
 	})
 
@@ -48,17 +57,3 @@ $
           $('.menu-item-link').removeClass('menu--item--active');
           $(this).addClass('menu--item--active');   
       });
-
-
-/// Image Swiper
-
-
-$(document).ready(function () {
-    var mySwiper = new Swiper ('.swiper-container', {
-	roundLengths: true,
-    loop: true,
-   	pagination: '.swiper-pagination',
-    paginationClickable: true
-    })
-});
-

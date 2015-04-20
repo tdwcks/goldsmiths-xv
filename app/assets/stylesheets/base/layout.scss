@@ -8,6 +8,7 @@
   display: block;
   margin: 0px auto;
   @include calc(width, "90%");
+  max-width: 1200px;
   position: relative;
 }
 

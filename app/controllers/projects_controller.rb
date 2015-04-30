@@ -3,11 +3,11 @@ class ProjectsController < ApplicationController
 	http_basic_authenticate_with name: "tom", password: "test", except: :index
 
 	def index 
-		@projects = Project.all
+		@projects = Project.order('designer ASC')
 	end
 
 	def list 
-		@projects = Project.all
+		@projects = Project.order('designer ASC')
 	end
 
 

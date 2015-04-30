@@ -85,7 +85,7 @@
 
 					            <div class="swiper-slide">
 
-					            	<%= image_tag "db-img/project<%= project.id %>/1.png", :class => "image-projects" %>			          
+					            		          
 					            
 								</div>
 
@@ -154,7 +154,6 @@
 				<% @projects.offset(12).limit(12).each do |project| %>
 
 				<li name="project-<%= project.id %>">
-
 		  			<a class="list-designer-name"><%= project.designer %></a>	
 		  			<a class="list-project-name"><%= project.title %></a>		
 			  	</li>

@@ -7,8 +7,7 @@
 ul.list-all-designers {
   color: #fff;
   font-weight: 100;
-  padding: 0;
-  padding-bottom: 50px;
+  padding: 0 0 50px 0;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
 
@@ -16,7 +15,7 @@ ul.list-all-designers {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding: 18px 0px;
+    padding: 13px 0px;
     position: relative;
     cursor: pointer;
     
@@ -47,7 +46,7 @@ ul.list-all-designers {
     .list-project-name {
       color: #fff;
       position: absolute;
-      top: 18px;
+      top: 13px;
       left: 0;
       opacity: 0;
     }

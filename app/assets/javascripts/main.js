@@ -57,3 +57,19 @@
           $('.menu-item-link').removeClass('menu--item--active');
           $(this).addClass('menu--item--active');   
       });
+
+// Change About To Manifesto 
+
+	$(document).on('click', '.js-manifesto', function(e) {
+          e.preventDefault(); 
+     
+          $('.layout-hero .layout-container .layout-one-column-grid .type-hero').text('Manifesto ipsum dolor sit amet, consectet adipiscing elit. Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Lorem ipsum dolor sit amet, consectet adipiscing elit. Proin risus.');
+
+      });
+
+	$(document).on('click', '.js-about', function(e) {
+          e.preventDefault(); 
+     
+          $('.layout-hero .layout-container .layout-one-column-grid .type-hero').text('Lorum ipsum dolor sit amet, consectet adipiscing elit. Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Lorem ipsum dolor sit amet, consectet adipiscing elit. Proin risus.');
+
+      });

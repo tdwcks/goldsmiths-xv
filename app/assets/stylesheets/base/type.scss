@@ -50,9 +50,8 @@ h4 {
     color: $colour_lightestgrey;
 
     &.expanded-project-name {
-      font-size: 1em;
+      font-size: 1.4em;
       color: $colour_lightestgrey;
-      margin-bottom: 20px;
     }
 
     &.backend-project-designer {
@@ -70,6 +69,14 @@ h5 {
     &.expanded-designer-name {
       font-size: 0.9em;
       color:$colour_lightgrey;
+    }
+
+    &.type-data-title {
+      color: #fff;
+      font-size: 0.9em;
+      text-align: right;
+      display: block;
+      padding: 10px 0 5px 0;
     }
 }
 
@@ -104,19 +111,24 @@ p {
 
   &.expanded-project-description {
     color: $colour_lightestgrey;
+    width: 70%;
+    margin-left: 90px;
+    font-family: "Times new roman";
     font-size: 1em;
     margin-top: 0;
-    line-height: 1.7em;
+    line-height: 1.6em;
     padding-bottom: 10px;
     margin-top: 100px;
+    display: block;
+    clear: both;
   }
 
   &.type-hero {
-    color: $colour_lightestgrey;
-    font-size: 0.9em;
+    color: #fff;
+    font-size: 1em;
+    font-family: "Times new roman";
     margin-top: 0;
-    color: $colour_lightgrey;
-    line-height: 1.8em;
+    line-height: 1.5em;
     padding-bottom: 10px;
   }
 
@@ -160,6 +172,12 @@ span {
     display: block;
     padding: 10px 0px;
     font-size: 0.9em;
+
+    br {
+      line-height: 2em;
+      padding: 30px;
+      display: block;
+    }
 
     &:last-child {
       padding-bottom: 500px;

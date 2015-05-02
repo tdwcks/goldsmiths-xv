@@ -16,12 +16,22 @@
 
 		<%= simple_form_for (@project) do |form| %>
 			  <%= form.input :title, label: "Project Title" %>
-			  <%= form.input :designer, label: "Designer Name" %>
-			  <%= form.input :url, label: "Designer / Project Website" %>
-			  <%= form.input :email, label: "Designers Email" %>
-			  <%= form.input :image_folder, label: "image_folder" %>
-			  <%= form.input :description, label: "Description", as: :text, :input_html => {:rows => 10} %>
-			  <%= form.button :submit %>
+		  	  <%= form.input :designer, label: "Designer Name" %>
+		  	  <%= form.input :url, label: "Designer / Project Website" %>
+		  	  <%= form.input :email, label: "Designers Email" %>
+		  	  <%= form.input :image_folder, label: "image_folder" %>
+		  	  <%= form.input :quote, label: "Quote", as: :text, :input_html => {:rows => 2} %>
+		  	  <%= form.input :description, label: "Description", as: :text, :input_html => {:rows => 10} %>
+		  	  <%= form.input :twitter, label: "Twitter" %>
+		  	  <%= form.input :data_slow, label: "Data Slow" %>
+		  	  <%= form.input :data_past, label: "Data Past" %>
+		  	  <%= form.input :data_close, label: "Data Close" %>
+		  	  <%= form.input :data_order, label: "Data Order" %>
+		  	  <%= form.input :data_private, label: "Data Private" %>
+		  	  <%= form.input :data_natural, label: "Data Natural" %>
+		  	  <%= form.input :data_fiction, label: "Data Fiction" %>
+		  	  <%= form.input :data_for, label: "Data For" %>
+		  	  <%= form.button :submit %>
 		<% end %>
 
 		<p>

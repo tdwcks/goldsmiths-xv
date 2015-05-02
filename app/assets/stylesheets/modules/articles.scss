@@ -19,6 +19,15 @@
   }
 }
 
+.article-data-list {
+  width: 180px;
+  float: right;
+}
+
+.article-manifesto-block {
+  display: none;
+}
+
 .layout-designers {
   width: 100%;
   @include calc(height, "100vh - 70px");

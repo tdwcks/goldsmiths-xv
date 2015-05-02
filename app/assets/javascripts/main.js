@@ -25,18 +25,16 @@
 
 			// Activate the Slider. This has to be done here in order to be responsive. Needs to be a DOM element.
 				var mySwiper = new Swiper ('.swiper-container', {
-					pagination: '.swiper-pagination',
-				    paginationClickable: true,
 				    nextButton: '.swiper-button-next',
-        			prevButton: '.swiper-button-prev',
-
+        			prevButton: '.swiper-button-prev'
+        			
 			    });
 		}	
 	})
 
 // Designer Close
 
-	$(document).on('click', '.layout-designer-expanded .back-to-all', function(e) {
+	$(document).on('click', '.layout-designer-expanded .link-back-to-all', function(e) {
 		e.preventDefault(); 
 			$('.layout-project-expanded').addClass('active--project--collapse');
 			$('.layout-project-expanded').removeClass('active--project--expand');
@@ -62,14 +60,20 @@
 
 	$(document).on('click', '.js-manifesto', function(e) {
           e.preventDefault(); 
-     
-          $('.layout-hero .layout-container .layout-one-column-grid .type-hero').text('Manifesto ipsum dolor sit amet, consectet adipiscing elit. Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Lorem ipsum dolor sit amet, consectet adipiscing elit. Proin risus.');
-
+    		
+          $('.article-info-block').fadeOut();
+          $('.article-manifesto-block').fadeIn();
       });
 
-	$(document).on('click', '.js-about', function(e) {
-          e.preventDefault(); 
-     
-          $('.layout-hero .layout-container .layout-one-column-grid .type-hero').text('Lorum ipsum dolor sit amet, consectet adipiscing elit. Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Lorem ipsum dolor sit amet, consectet adipiscing elit. Proin risus.');
+// Change header on scroll 
 
-      });
+$(window).scroll(function(){
+		var aTop = 15;
+
+		if($(this).scrollTop()>=aTop){
+		    $('header').addClass('header--collapse');
+		}
+		else {
+		    $('header').removeClass('header--collapse');
+		}
+	});

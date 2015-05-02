@@ -8,7 +8,7 @@
 				
 				<li class="menu-item">
 
-					<a id="layout-hero" class="menu-item-link js-about menu--item--active" href="">About</a>
+					<a id="layout-hero" class="menu-item-link js-about menu--item--active" href="">Info</a>
 
 				</li>
 
@@ -40,24 +40,55 @@
 
 		<div class="layout-one-column-grid">
 
-			<div class="hero-type-block layout-clear-top">
+			<div class="hero-type-block layout-clear-top article-info-block">
 
-				<p class="type-hero">Lorem ipsum dolor sit amet, consectet adipiscing elit. Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Lorem ipsum dolor sit amet, consectet adipiscing elit. Proin risus. </p>
-
+				<span class="event-details">Industry and Press Private View </br> 5 June 7pm-10pm</span>
+				<span class="event-details">Public Opening </br> 6-8 June 10am-4pm</span>
 				<span class="event-date">Friday, 21st June 2015</span>
-				<span class="event-details">Old Truman Brewery</span>
-				<span class="event-details">91 Brick Lane, London, E1 6QL</span>
+				<span class="event-details">The Old Truman Brewery </br> Ely’s Yard (F Block G4) </br> 15 Hanbury Street </br> E1 6QR</span>
 				<a href="http://citymapper.com/directions?endcoord=51.52118,-0.07186000000001513&endname=Old%20Truman%20Brewery&endaddress=Brick%20Lane
 " class="link-get-directions">Get Directions on CityMapper</a>
+			</div>
+
+			<div class="hero-type-block layout-clear-top article-manifesto-block">
+
+				<p class="type-hero">Out there is a world filled with complexity and contradictions; built from infinite intertwining systems; where change is the only constant; where uncertainty is certain and defining is problematic. </br> Here you will find a design practice which acknowledges, engages with, enjoys and acts upon the complexity of the world. Here you will navigate through fields of interrogation which intersect and then separate, which connect and then contradict. </br> Our routes are not linear, our outcomes are not set in stone: we chart ourselves loosely on changeable scales. We are collected here, together, for now.</p>
 			</div>
 
 		</div>
 
 		<div class="layout-three-column-grid layout-clear-top">
 
-		</div>
+			<canvas id="network">
 
-		<div class="layout-one-column-grid layout-clear-top">
+			</canvas>
+
+			<div class="article-data-list">
+
+				<ul class="list-data-y">
+					<h5 class="type-data-title">Y-Axis</h5>
+					<li><a href="#" class="link-switch-dataset" id="ySlow">Slow - Fast</a></li>
+					<li><a href="#" class="link-switch-dataset" id="yPast">Past - Future</a></li>
+					<li><a href="#" class="link-switch-dataset dataset--active" id="yClose">Close - Far</a></li>
+					<li><a href="#" class="link-switch-dataset" id="yOrder">Order - Chaos</a></li>
+					<li><a href="#" class="link-switch-dataset" id="yPrivate">Private - Public</a></li>
+					<li><a href="#" class="link-switch-dataset" id="yNatural">Natural - Artificial</a></li>
+					<li><a href="#" class="link-switch-dataset" id="yFiction">Fiction - Reality</a></li>
+					<li><a href="#" class="link-switch-dataset" id="yFor">For - Against</a></a></li>
+				</ul>
+
+				<ul class="list-data-x">
+					<h5 class="type-data-title">X-Axis</h5>
+					<li><a href="#" class="link-switch-dataset dataset--active" id="xSlow">Slow - Fast</a></li>
+					<li><a href="#" class="link-switch-dataset" id="xPast">Past - Future</a></li>
+					<li><a href="#" class="link-switch-dataset" id="xClose">Close - Far</a></li>
+					<li><a href="#" class="link-switch-dataset" id="xOrder">Order - Chaos</a></li>
+					<li><a href="#" class="link-switch-dataset" id="xPrivate">Private - Public</a></li>
+					<li><a href="#" class="link-switch-dataset" id="xNatural">Natural - Artificial</a></li>
+					<li><a href="#" class="link-switch-dataset" id="xFiction">Fiction - Reality</a></li>
+					<li><a href="#" class="link-switch-dataset" id="xFor">For - Against</a></a></li>
+				</ul>
+			</div>
 
 		</div>
 
@@ -78,6 +109,12 @@
 					<div class="layout-two-column-grid">
 						
 						<h4 class="expanded-project-name"><%= project.title %> - <%= project.designer %></h4>
+
+						<a class="link-expanded-email" href="<%= project.url %>"><%= project.url %></a>
+
+						<a class="link-expanded-email" href="mailto:<%= project.email %>?Subject=Great%20Project!" ><%= project.email %></a>
+
+						<a class="link-expanded-email" href="https://twitter.com/<%= project.twitter %>" >@<%=project.twitter %></a>
 
 						<div class="swiper-container">
 
@@ -102,22 +139,21 @@
 					        
 					        </div>
 
-							    <div class="swiper-pagination"></div>
+							    <div class="swiper-button-next"></div>
+
+        						<div class="swiper-button-prev"></div>
+
 						</div>
 
 					</div>
 
 					<div class="layout-two-column-grid layout-column-right">
 
-						<a href="#" class="back-to-all" id="project-<%= project.id %>">Close Project</a>
+						<a href="#" class="link-back-to-all" id="project-<%= project.id %>"></a>
 
 						<p class="expanded-project-description">
 							<%= project.description %>
 						</p>
-
-						<a href="mailto:<%= project.email %>?Subject=Great%20Project!" class="expanded-email">Email Designer</a>
-
-						<a class="expanded-url" href="<%= project.url %>">Visit Website</a>
 
 					</div>
 

@@ -42,7 +42,9 @@ ul.list-all-designers {
     .list-number {
       color: #fff;
       font-size: 0.9em;
+      top: 17px;
       font-family: "Times New Roman";
+      font-style: italic;
       position: absolute;
       left: 0px;
     }
@@ -55,7 +57,7 @@ ul.list-all-designers {
     .list-project-name {
       color: #fff;
       position: absolute;
-      top: 13px;
+      top: 15px;
       left: 35px;
       opacity: 0;
     }

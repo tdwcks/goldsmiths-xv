@@ -9,13 +9,51 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 70px;
-	@include background-image(linear-gradient(black  50%, transparent 100%));
+	height: 120px;
+	padding-top: 50px;
+	@include background-image(linear-gradient(black  45%, transparent 100%));
+
+	.header-logo-large {
+		font-size: 1em;
+		color: #fff;
+		text-transform: uppercase;
+		float: right;
+		position: relative;
+
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: -25px;
+			left: 60px;
+			width: 15px;
+			height: 15px;
+			background: #fff;
+		}
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 25px;
+			left: 210px;
+			width: 15px;
+			height: 15px;
+			background: #fff;
+		}
+	}
+}
+
+header.header--collapse {
+	height: 50px;
+	padding-top: 20px;
 }
 
 nav {
 	display: block;
-	margin-top: 20px;
+	margin-top: 0;
+	width: 50%;
+	float: left;
 
 	.menu-items {
 		display: inline;

@@ -28,6 +28,8 @@
 
 		</nav>
 
+		<h1 class="header-logo-large">Goldsmiths BA Design Degree Show</h1>
+
 	</div>
 
 </header>
@@ -74,8 +76,6 @@
 				<div id="project-<%= project.id %>" class="layout-project-expanded">
 
 					<div class="layout-two-column-grid">
-
-						<a href="#" class="back-to-all" id="project-<%= project.id %>">Close Project</a>
 						
 						<h4 class="expanded-project-name"><%= project.title %> - <%= project.designer %></h4>
 
@@ -84,7 +84,6 @@
 							<div class="swiper-wrapper">
 
 					            <div class="swiper-slide">
-
 					            		          
 					            
 								</div>
@@ -110,6 +109,8 @@
 
 					<div class="layout-two-column-grid layout-column-right">
 
+						<a href="#" class="back-to-all" id="project-<%= project.id %>">Close Project</a>
+
 						<p class="expanded-project-description">
 							<%= project.description %>
 						</p>
@@ -132,9 +133,12 @@
 
 				<ul class="list-all-designers">
 
-					<% @projects.limit(12).each do |project| %>
+					<% i = 0 %>
+					<% @projects.limit(13).each do |project| %>
+					<% i += 1%>
 
 					<li name="project-<%= project.id %>">
+						<span class="list-number">00<%= i %></span>
 			  			<a class="list-designer-name"><%= project.designer %></a>	
 			  			<a class="list-project-name"><%= project.title %></a>		
 			  		</li>
@@ -151,9 +155,12 @@
 
 			<ul class="list-all-designers">
 
-				<% @projects.offset(12).limit(12).each do |project| %>
+				<% i = 13 %>
+				<% @projects.offset(13).limit(13).each do |project| %>
+				<% i += 1%>
 
 				<li name="project-<%= project.id %>">
+					<span class="list-number">0<%= i %></span>
 		  			<a class="list-designer-name"><%= project.designer %></a>	
 		  			<a class="list-project-name"><%= project.title %></a>		
 			  	</li>
@@ -168,10 +175,12 @@
 
 			<ul class="list-all-designers">
 
-				<% @projects.offset(24).limit(12).each do |project| %>
+				<% i = 26 %>
+				<% @projects.offset(26).limit(13).each do |project| %>
+				<% i += 1%>
 
 				<li name="project-<%= project.id %>">
-
+					<span class="list-number">0<%= i %></span>
 		  			<a class="list-designer-name"><%= project.designer %></a>	
 		  			<a class="list-project-name"><%= project.title %></a>		
 			  	</li>
@@ -186,10 +195,12 @@
 
 			<ul class="list-all-designers">
 
-				<% @projects.offset(36).limit(12).each do |project| %>
+				<% i = 39 %>
+				<% @projects.offset(39).limit(13).each do |project| %>
+				<% i += 1%>
 
 				<li name="project-<%= project.id %>">
-
+					<span class="list-number">0<%= i %></span>
 		  			<a class="list-designer-name"><%= project.designer %></a>	
 		  			<a class="list-project-name"><%= project.title %></a>		
 			  	</li>

@@ -7,7 +7,7 @@ class CreateProjects < ActiveRecord::Migration
       t.string :email
       t.string :image_folder
       t.string :description
-
+      
       t.timestamps null: false
     end
   end

@@ -39,15 +39,24 @@ ul.list-all-designers {
       @include transition(all, 0.5s, ease-in-out);
     }
 
+    .list-number {
+      color: #fff;
+      font-size: 0.9em;
+      font-family: "Times New Roman";
+      position: absolute;
+      left: 0px;
+    }
+
     .list-designer-name {
-      color: #fff;  
+      color: #fff;
+      left: 35px;
     }
 
     .list-project-name {
       color: #fff;
       position: absolute;
       top: 13px;
-      left: 0;
+      left: 35px;
       opacity: 0;
     }
   }

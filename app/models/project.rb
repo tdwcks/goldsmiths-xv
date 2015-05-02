@@ -4,5 +4,6 @@ class Project < ActiveRecord::Base
 	validates :url, presence: true
 	validates :email, presence: true
 	validates :image_folder, presence: true
-  	validates :description, presence: true
+ 	validates :description, presence: true
+  	
 end

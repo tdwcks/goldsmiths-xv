@@ -5,13 +5,10 @@
 //
 
 $main_font: cinetype, sans-serif;
-$mono_font: cinetype-mono, sans-serif;
 
 $base_font_size: 18px;
 
-@include font-face(cinetype, 'fonts/GT-Cinetype-Trial-Regular-webfont', 300);
-@include font-face(sectra, 'fonts/GT-sectra-Bold-trial-webfont', 300);
-@include font-face(cinetype-mono, 'fonts/GT-Cinetype-Trial-Mono-webfont', 300);
+@include font-face(cinetype, '/assets/GT-Cinetype-Regular', 300);
 
 h1, h2, h3, h4, h5, h6 {
   padding: 0;

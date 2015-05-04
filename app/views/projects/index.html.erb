@@ -67,26 +67,26 @@
 
 				<ul class="list-data-y">
 					<h5 class="type-data-title">Y-Axis</h5>
-					<li><a href="#" class="link-switch-dataset" id="ySlow">Slow - Fast</a></li>
-					<li><a href="#" class="link-switch-dataset" id="yPast">Past - Future</a></li>
-					<li><a href="#" class="link-switch-dataset dataset--active" id="yClose">Close - Far</a></li>
-					<li><a href="#" class="link-switch-dataset" id="yOrder">Order - Chaos</a></li>
-					<li><a href="#" class="link-switch-dataset" id="yPrivate">Private - Public</a></li>
-					<li><a href="#" class="link-switch-dataset" id="yNatural">Natural - Artificial</a></li>
-					<li><a href="#" class="link-switch-dataset" id="yFiction">Fiction - Reality</a></li>
-					<li><a href="#" class="link-switch-dataset" id="yFor">For - Against</a></a></li>
+					<li><a href="#" class="link-switch-dataset dataset-y" id="ySlow">Slow - Fast</a></li>
+					<li><a href="#" class="link-switch-dataset dataset-y" id="yPast">Past - Future</a></li>
+					<li><a href="#" class="link-switch-dataset dataset-y dataset--active" id="yClose">Close - Far</a></li>
+					<li><a href="#" class="link-switch-dataset dataset-y" id="yOrder">Order - Chaos</a></li>
+					<li><a href="#" class="link-switch-dataset dataset-y" id="yPrivate">Private - Public</a></li>
+					<li><a href="#" class="link-switch-dataset dataset-y" id="yNatural">Natural - Artificial</a></li>
+					<li><a href="#" class="link-switch-dataset dataset-y" id="yFiction">Fiction - Reality</a></li>
+					<li><a href="#" class="link-switch-dataset dataset-y" id="yFor">For - Against</a></a></li>
 				</ul>
 
 				<ul class="list-data-x">
 					<h5 class="type-data-title">X-Axis</h5>
-					<li><a href="#" class="link-switch-dataset dataset--active" id="xSlow">Slow - Fast</a></li>
-					<li><a href="#" class="link-switch-dataset" id="xPast">Past - Future</a></li>
-					<li><a href="#" class="link-switch-dataset" id="xClose">Close - Far</a></li>
-					<li><a href="#" class="link-switch-dataset" id="xOrder">Order - Chaos</a></li>
-					<li><a href="#" class="link-switch-dataset" id="xPrivate">Private - Public</a></li>
-					<li><a href="#" class="link-switch-dataset" id="xNatural">Natural - Artificial</a></li>
-					<li><a href="#" class="link-switch-dataset" id="xFiction">Fiction - Reality</a></li>
-					<li><a href="#" class="link-switch-dataset" id="xFor">For - Against</a></a></li>
+					<li><a href="#" class="link-switch-dataset dataset-x dataset--active" id="xSlow">Slow - Fast</a></li>
+					<li><a href="#" class="link-switch-dataset dataset-x" id="xPast">Past - Future</a></li>
+					<li><a href="#" class="link-switch-dataset dataset-x" id="xClose">Close - Far</a></li>
+					<li><a href="#" class="link-switch-dataset dataset-x" id="xOrder">Order - Chaos</a></li>
+					<li><a href="#" class="link-switch-dataset dataset-x" id="xPrivate">Private - Public</a></li>
+					<li><a href="#" class="link-switch-dataset dataset-x" id="xNatural">Natural - Artificial</a></li>
+					<li><a href="#" class="link-switch-dataset dataset-x" id="xFiction">Fiction - Reality</a></li>
+					<li><a href="#" class="link-switch-dataset dataset-x" id="xFor">For - Against</a></a></li>
 				</ul>
 			</div>
 
@@ -102,65 +102,6 @@
 
 		<article class="layout-designer-expanded">
 
-			<% @projects.limit(5).each do |project| %>
-
-				<div id="project-<%= project.id %>" class="layout-project-expanded">
-
-					<div class="layout-two-column-grid">
-						
-						<h4 class="expanded-project-name"><%= project.title %> - <%= project.designer %></h4>
-
-						<a class="link-expanded-email" href="<%= project.url %>"><%= project.url %></a>
-
-						<a class="link-expanded-email" href="mailto:<%= project.email %>?Subject=Great%20Project!" ><%= project.email %></a>
-
-						<a class="link-expanded-email" href="https://twitter.com/<%= project.twitter %>" >@<%=project.twitter %></a>
-
-						<div class="swiper-container">
-
-							<div class="swiper-wrapper">
-
-					            <div class="swiper-slide">
-					            		          
-					            
-								</div>
-
-					            <div class="swiper-slide">
-
-					            	<img class="image-projects" src="assets/db-img/project<%= project.id %>/2.jpg"/>
-
-					            </div>
-
-					            <div class="swiper-slide">
-
-					            	<img class="image-projects" src="assets/db-img/project<%= project.id %>/3.jpg"/>
-
-					            </div>
-					        
-					        </div>
-
-							    <div class="swiper-button-next"></div>
-
-        						<div class="swiper-button-prev"></div>
-
-						</div>
-
-					</div>
-
-					<div class="layout-two-column-grid layout-column-right">
-
-						<a href="#" class="link-back-to-all" id="project-<%= project.id %>"></a>
-
-						<p class="expanded-project-description">
-							<%= project.description %>
-						</p>
-
-					</div>
-
-				</div>
-
-			<% end %>
-
 		</article>
 
 		<article class="layout-designer-list">
@@ -173,7 +114,7 @@
 					<% @projects.limit(13).each do |project| %>
 					<% i += 1%>
 
-					<li name="project-<%= project.id %>">
+					<li name="<%= project.id %>">
 						<span class="list-number">00<%= i %></span>
 			  			<a class="list-designer-name"><%= project.designer %></a>	
 			  			<a class="list-project-name"><%= project.title %></a>		
@@ -195,7 +136,7 @@
 				<% @projects.offset(13).limit(13).each do |project| %>
 				<% i += 1%>
 
-				<li name="project-<%= project.id %>">
+				<li name="<%= project.id %>">
 					<span class="list-number">0<%= i %></span>
 		  			<a class="list-designer-name"><%= project.designer %></a>	
 		  			<a class="list-project-name"><%= project.title %></a>		
@@ -215,7 +156,7 @@
 				<% @projects.offset(26).limit(13).each do |project| %>
 				<% i += 1%>
 
-				<li name="project-<%= project.id %>">
+				<li name="<%= project.id %>">
 					<span class="list-number">0<%= i %></span>
 		  			<a class="list-designer-name"><%= project.designer %></a>	
 		  			<a class="list-project-name"><%= project.title %></a>		
@@ -235,7 +176,7 @@
 				<% @projects.offset(39).limit(13).each do |project| %>
 				<% i += 1%>
 
-				<li name="project-<%= project.id %>">
+				<li name="<%= project.id %>">
 					<span class="list-number">0<%= i %></span>
 		  			<a class="list-designer-name"><%= project.designer %></a>	
 		  			<a class="list-project-name"><%= project.title %></a>		

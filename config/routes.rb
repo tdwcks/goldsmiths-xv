@@ -9,10 +9,7 @@ Rails.application.routes.draw do
 
   get 'project/show'
 
-  get 'project/1/show'
-
   get 'project/edit'
-
 
   resources :projects
   root 'projects#index'

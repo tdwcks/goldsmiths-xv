@@ -4,32 +4,34 @@
         event : "loadimages"
     });
 
+// Switch Datapoints on click X
+
+	$(document).on('click', '.dataset-x', function(e) {
+		e.preventDefault(); 
+
+		$('.dataset-x').removeClass('dataset--active');
+        $(this).addClass('dataset--active');   
+	})
+
+// Switch Datapoints on click Y
+
+	$(document).on('click', '.dataset-y', function(e) {
+		e.preventDefault(); 
+		
+		$('.dataset-y').removeClass('dataset--active');
+        $(this).addClass('dataset--active');   
+	})
+
 // Designer Expand 
 
 	$(document).on('click', '.list-all-designers li', function(e) {
 		e.preventDefault(); 
+
 		var selected_designer = $(this).attr('name');
 
-		if ($('body').hasClass('project--expanded')) {
-			$('#' + selected_designer).removeClass('active--project--expand');
-			$('body').removeClass('project--expanded');
-		}
+		$('body').addClass('is--menu--active');
 
-		else {
-			$('body').addClass('active--project--expand');
-			$('.layout-project-expanded').removeClass('active--project--collapse');
-			$('#' + selected_designer).addClass('active--project--expand');
-
-			// Trigger the LazyLoad command
-			$('.active--project--expand img').trigger('loadimages');
-
-			// Activate the Slider. This has to be done here in order to be responsive. Needs to be a DOM element.
-				var mySwiper = new Swiper ('.swiper-container', {
-				    nextButton: '.swiper-button-next',
-        			prevButton: '.swiper-button-prev'
-        			
-			    });
-		}	
+		$('.layout-designer-expanded').load("/projects/" + selected_designer);
 	})
 
 // Designer Close

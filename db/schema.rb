@@ -25,8 +25,7 @@ ActiveRecord::Schema.define(version: 20150502153757) do
     t.string   "description"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
-    t.string   "data_slow"
-    t.string   "integer"
+    t.integer  "data_slow"
     t.integer  "data_past"
     t.integer  "data_close"
     t.integer  "data_order"
@@ -35,9 +34,7 @@ ActiveRecord::Schema.define(version: 20150502153757) do
     t.integer  "data_fiction"
     t.integer  "data_for"
     t.string   "twitter"
-    t.string   "string"
     t.string   "quote"
-    t.string   "text"
   end
 
 end

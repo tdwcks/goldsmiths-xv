@@ -4,10 +4,6 @@
 //
 //
 
-/* ==========================================================================
-   Hero
-   ========================================================================== */
-
 .layout-hero {
   display: block;
   width: 100%;
@@ -43,29 +39,27 @@
     top: 0;
     display: block;
     width: 100%;
-    padding-top: 55px;
 
     .active--project--expand & {
+      display: none;
       @include animation(project--out 0.5s forwards);
     }
 
-    &.active--project--collapse {
+    .active--project--collapse & {
       @include animation(project--in 1s forwards);
     }
   }
 
-  .layout-project-expanded {
+  .layout-designer-expanded {
     position: absolute;
-    top: 35px;
+    top: 0;
     display: block;
     width: 100%;
     clear: both;
     min-height: 100%;
-    padding-top: 33px;
+    padding-top: 10px;
     padding-bottom: 25px;
-    opacity: 0;
     z-index: -100;
-
 
     &.active--project--expand {
       @include animation(project--in 1s forwards);
@@ -76,4 +70,5 @@
     }
   }
 }
+
 

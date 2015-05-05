@@ -11,5 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require swiper
 //= require jquery_ujs
 //= require_tree .
+

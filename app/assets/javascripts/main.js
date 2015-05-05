@@ -1,9 +1,3 @@
-// Lazy Load
-
-    $("img.lazy").lazyload({
-        event : "loadimages"
-    });
-
 // Switch Datapoints on click X
 
 	$(document).on('click', '.dataset-x', function(e) {
@@ -18,7 +12,7 @@
 	$(document).on('click', '.dataset-y', function(e) {
 		e.preventDefault(); 
 		
-		$('.dataset-y').removeClass('dataset--active');
+		$('body').addClass('active--project--expand');
         $(this).addClass('dataset--active');   
 	})
 
@@ -29,20 +23,35 @@
 
 		var selected_designer = $(this).attr('name');
 
-		$('body').addClass('is--menu--active');
+		$('body').addClass('active--project--expand');
 
-		$('.layout-designer-expanded').load("/projects/" + selected_designer);
+		$('.layout-project-expanded-container').load("/projects/" + selected_designer, function() {
+  		
+			});
 	})
 
-// Designer Close
 
-	$(document).on('click', '.layout-designer-expanded .link-back-to-all', function(e) {
-		e.preventDefault(); 
-			$('.layout-project-expanded').addClass('active--project--collapse');
-			$('.layout-project-expanded').removeClass('active--project--expand');
-			$('.layout-project-expanded').removeClass('active--project--expand');
-			$('body').removeClass('active--project--expand');
+	$(document).on('click', '.link-back-to-all', function(e) {
+	e.preventDefault(); 
+		alert('de');
 	})
+
+// Swiper 
+
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true
+    });
+
+// Designer Closes
+
+
+	
 
 // Scroll To Class Menu Function 
 

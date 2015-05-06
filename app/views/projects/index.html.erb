@@ -34,6 +34,103 @@
 
 </header>
 
+<div class="container-canvas">
+
+	<canvas id="network">
+	     < !-- Provide fallback -->
+	</canvas>
+
+</div>
+
+
+<div class="axis">
+	<div class="axis-holder">
+		<div class="x-axis"></div>
+		<div class="y-axis"></div>
+		<span class="x-axis-label-low">Slow</span>
+		<span class="x-axis-label-high">Fast</span>
+		<span class="y-axis-label-low">Slow</span>
+		<span class="y-axis-label-high">Fast</span>
+	</div>
+</div>
+
+<ul class=people>
+
+	<% @projects.each do |project| %>
+
+		<li class="person" data-slow='<%= project.data_slow %>' data-past='<%= project.data_past %>' data-close='<%= project.data_close %>' data-order='<%= project.data_order %>' data-private='<%= project.data_private %>' data-natural='<%= project.data_natural %>' data-fiction='<%= project.data_fiction %>' data-for='<%= project.data_for %>'>
+
+			<h1><%= project.designer %></h1>
+  		</li>
+
+	<% end %>
+
+</ul>
+
+<ul class=people>
+    <li class="person" data-slow="0.3" data-past="0.23" data-close="0.23" data-order="0.32" data-private="0.8" data-natural="0.23" data-fiction="0.54" data-for="0.55" id="">
+        <h1>
+            Tom
+        </h1>
+    </li>
+    <li class="person" data-slow="0.5" data-past="0.8" data-close="0.32" data-order="0.54" data-private="0.23" data-natural="0.12" data-fiction="0.89" data-for="0.98" id="">
+        <h1>
+            Harrrrrrryyyyyyy
+        </h1>
+    </li>
+    <li class="person" data-slow="0.1" data-past="0.23" data-close="0.20" data-order="0.96" data-private="0.99" data-natural="0.83" data-fiction="0.21" data-for="0.65" id="">
+        <h1>
+            Mark
+        </h1>
+    </li>
+    <li class="person" data-slow="0.5" data-past="0.2213" data-close="0.65" data-order="0.98" data-private="0.234" data-natural="0.673" data-fiction="0.34" data-for="0.873" id="">
+        <h1>
+            Tom
+        </h1>
+    </li>
+    <li class="person" data-slow="0.53" data-past="0.223" data-close="0.923" data-order="0.432" data-private="0.58" data-natural="0.923" data-fiction="0.254" data-for="0.855" id="">
+        <h1>
+            Tom
+        </h1>
+    </li>
+    <li class="person" data-slow="0.143" data-past="0.935" data-close="0.323" data-order="0.932" data-private="0.38" data-natural="0.123" data-fiction="0.454" data-for="0.255" id="">
+        <h1>
+            Tom
+        </h1>
+    </li>
+    <li class="person" data-slow="0.332" data-past="0.134" data-close="0.5232" data-order="0.98" data-private="0.234" data-natural="0.673" data-fiction="0.34" data-for="0.873" id="">
+        <h1>
+            Tom
+        </h1>
+    </li>
+    <li class="person" data-slow="0.53" data-past="0.823" data-close="0.123" data-order="0.432" data-private="0.68" data-natural="0.723" data-fiction="0.154" data-for="0.555" id="">
+        <h1>
+            Tom
+        </h1>
+    </li>
+    <li class="person" data-slow="0.5" data-past="0.2213" data-close="0.65" data-order="0.98" data-private="0.234" data-natural="0.673" data-fiction="0.34" data-for="0.873" id="">
+        <h1>
+            Tom
+        </h1>
+    </li>
+    <li class="person" data-slow="0.53" data-past="0.223" data-close="0.923" data-order="0.432" data-private="0.58" data-natural="0.923" data-fiction="0.254" data-for="0.855" id="">
+        <h1>
+            Tom
+        </h1>
+    </li>
+    <li class="person" data-slow="0.343" data-past="0.7235" data-close="0.923" data-order="0.432" data-private="0.98" data-natural="0.123" data-fiction="0.454" data-for="0.255" id="">
+        <h1>
+            Tom
+        </h1>
+    </li>
+    <li class="person" data-slow="0.53" data-past="0.823" data-close="0.123" data-order="0.432" data-private="0.68" data-natural="0.723" data-fiction="0.154" data-for="0.455" id="">
+        <h1>
+            Tom
+        </h1>
+    </li>
+
+</ul>
+
 <article class="layout-hero">
 
 	<div class="layout-container">
@@ -52,43 +149,40 @@
 
 			<div class="hero-type-block layout-clear-top article-manifesto-block">
 
-				<p class="type-hero">Out there is a world filled with complexity and contradictions; built from infinite intertwining systems; where change is the only constant; where uncertainty is certain and defining is problematic. </br> Here you will find a design practice which acknowledges, engages with, enjoys and acts upon the complexity of the world. Here you will navigate through fields of interrogation which intersect and then separate, which connect and then contradict. </br> Our routes are not linear, our outcomes are not set in stone: we chart ourselves loosely on changeable scales. We are collected here, together, for now.</p>
+				<p class="type-hero">Out there is a world filled with complexity and contradictions; built from infinite intertwining systems; where change is the only constant; where uncertainty is certain and defining is problematic.</p> <p class="type-hero">Here you will find a design practice which acknowledges, engages with, enjoys and acts upon the complexity of the world. Here you will navigate through fields of interrogation which intersect and then separate, which connect and then contradict. </p> <p class="type-hero">Our routes are not linear, our outcomes are not set in stone: we chart ourselves loosely on changeable scales. We are collected here, together, for now.</p>
 			</div>
 
 		</div>
 
 		<div class="layout-three-column-grid layout-clear-top">
 
-			<canvas id="network">
+			<nav class="article-data-list">
 
-			</canvas>
+			    <ul class="list-data-x">
+			    	<h5 class="type-data-title">X Axis</h5>
+			        <a href="#" class="link-switch-dataset" id="xSlow" data-setToSwitch="slow" data-axis="x" data-labels="Slow,Fast" >Slow - Fast</a>
+			        <a href="#" class="link-switch-dataset" id="xPast" data-setToSwitch="past" data-axis="x" data-labels="Past,Future" >Past - Future</a>
+			        <a href="#" class="link-switch-dataset" id="xClose" data-setToSwitch="close" data-axis="x" data-labels="Close,Far" >Close - Far</a>
+			        <a href="#" class="link-switch-dataset" id="xOrder" data-setToSwitch="order" data-axis="x" data-labels="Order,Chaos" >Order - Chaos</a>
+			        <a href="#" class="link-switch-dataset" id="xPrivate" data-setToSwitch="private" data-axis="x" data-labels="Private,Public" >Private - Public</a>
+			        <a href="#" class="link-switch-dataset" id="xNatural" data-setToSwitch="natural" data-axis="x" data-labels="Natural,Artificial" >Natural - Artificial</a>
+			        <a href="#" class="link-switch-dataset" id="xFiction" data-setToSwitch="fiction" data-axis="x" data-labels="Fiction,Reality"  >Fiction - Reality</a>
+			        <a href="#" class="link-switch-dataset" id="xFor" data-setToSwitch="for" data-axis="x" data-labels="For,Against" >For - Against</a>
+			    </ul>
 
-			<div class="article-data-list">
+			    <ul class="list-data-y">
+			    	<h5 class="type-data-title">Y Axis</h5>
+			         <a href="#" class="link-switch-dataset" id="ySlow" data-setToSwitch="slow" data-axis="y" data-labels="Slow,Fast" >Slow - Fast</a>
+			         <a href="#" class="link-switch-dataset" id="yPast" data-setToSwitch="past" data-axis="y" data-labels="Past,Future" >Past - Future</a>
+			         <a href="#" class="link-switch-dataset" id="yClose" data-setToSwitch="close" data-axis="y" data-labels="Close,Far" >Close - Far</a>
+			         <a href="#" class="link-switch-dataset" id="yOrder" data-setToSwitch="order" data-axis="y" data-labels="Order,Chaos" >Order - Chaos</a>
+			         <a href="#" class="link-switch-dataset" id="yPrivate" data-setToSwitch="private" data-axis="y" data-labels="Private,Public" >Private - Public</a>
+			         <a href="#" class="link-switch-dataset" id="yNatural" data-setToSwitch="natural" data-axis="y" data-labels="Natural,Artificial" >Natural - Artificial</a>
+			         <a href="#" class="link-switch-dataset" id="yFiction" data-setToSwitch="fiction" data-axis="y" data-labels="Fiction,Reality"  >Fiction - Reality</a>
+			         <a href="#" class="link-switch-dataset" id="yFor" data-setToSwitch="for" data-axis="y" data-labels="For,Against" >For - Against</a>
+			    </ul>
 
-				<ul class="list-data-y">
-					<h5 class="type-data-title">Y-Axis</h5>
-					<li><a href="#" class="link-switch-dataset dataset-y" id="ySlow">Slow - Fast</a></li>
-					<li><a href="#" class="link-switch-dataset dataset-y" id="yPast">Past - Future</a></li>
-					<li><a href="#" class="link-switch-dataset dataset-y dataset--active" id="yClose">Close - Far</a></li>
-					<li><a href="#" class="link-switch-dataset dataset-y" id="yOrder">Order - Chaos</a></li>
-					<li><a href="#" class="link-switch-dataset dataset-y" id="yPrivate">Private - Public</a></li>
-					<li><a href="#" class="link-switch-dataset dataset-y" id="yNatural">Natural - Artificial</a></li>
-					<li><a href="#" class="link-switch-dataset dataset-y" id="yFiction">Fiction - Reality</a></li>
-					<li><a href="#" class="link-switch-dataset dataset-y" id="yFor">For - Against</a></a></li>
-				</ul>
-
-				<ul class="list-data-x">
-					<h5 class="type-data-title">X-Axis</h5>
-					<li><a href="#" class="link-switch-dataset dataset-x dataset--active" id="xSlow">Slow - Fast</a></li>
-					<li><a href="#" class="link-switch-dataset dataset-x" id="xPast">Past - Future</a></li>
-					<li><a href="#" class="link-switch-dataset dataset-x" id="xClose">Close - Far</a></li>
-					<li><a href="#" class="link-switch-dataset dataset-x" id="xOrder">Order - Chaos</a></li>
-					<li><a href="#" class="link-switch-dataset dataset-x" id="xPrivate">Private - Public</a></li>
-					<li><a href="#" class="link-switch-dataset dataset-x" id="xNatural">Natural - Artificial</a></li>
-					<li><a href="#" class="link-switch-dataset dataset-x" id="xFiction">Fiction - Reality</a></li>
-					<li><a href="#" class="link-switch-dataset dataset-x" id="xFor">For - Against</a></a></li>
-				</ul>
-			</div>
+			</nav>
 
 		</div>
 
@@ -100,7 +194,7 @@
 
 	<div class="layout-container">
 
-		<article class="layout-designer-expanded">
+		<article class="layout-project-expanded-container">
 
 		</article>
 

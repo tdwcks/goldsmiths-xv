@@ -4,9 +4,15 @@
 //
 //
 
-div {
+form {
+  display: block;
+  min-height: 100%;
+}
+
+div.input {
   width: 100%;
   position: relative;
+  clear: both;
 
     label {
       clear: both;
@@ -85,6 +91,7 @@ div {
   }
 
   textarea {
+    clear: both;
     border-radius: 0;
     margin: 1.5em 0em 1.5em 0em;
     -webkit-appearance: none;

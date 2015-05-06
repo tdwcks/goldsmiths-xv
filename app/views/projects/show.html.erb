@@ -1,48 +1,57 @@
-<div class="layout-two-column-grid">
-						
-						<h4 class="expanded-project-name"><%= @project.title %> - <%= @project.designer %></h4>
+<article class="layout-designer-expanded">
 
-						<a class="link-expanded-email" href="<%= @project.url %>"><%= @project.url %></a>
+	<div class="layout-two-column-grid">
+							
+		<h4 class="expanded-project-name"><%= @project.title %><%= @project.id %> - <%= @project.designer %></h4>
 
-						<a class="link-expanded-email" href="mailto:<%= @project.email %>?Subject=Great%20Project!" ><%= @project.email %></a>
+		<a class="link-expanded-email" href="<%= @project.url %>"><%= @project.url %></a>
 
-						<a class="link-expanded-email" href="https://twitter.com/<%= @project.twitter %>" >@<%= @project.twitter %></a>
+		<a class="link-expanded-email" href="mailto:<%= @project.email %>?Subject=Great%20Project!" ><%= @project.email %></a>
 
-						<div class="swiper-container">
+		<a class="link-expanded-email" href="https://twitter.com/<%= @project.twitter %>" >@<%= @project.twitter %></a>
 
-							<div class="swiper-wrapper">
+		<div class="swiper-container">
 
-					            <div class="swiper-slide">
-					            		          
-					            
-								</div>
+			<div class="swiper-wrapper">
 
-					            <div class="swiper-slide">
+	            <div class="swiper-slide">
 
-					            	<img class="image-projects" src="assets/db-img/project<%= @project.id %>/2.jpg"/>
+	            		<%= image_tag("#{::Rails.root.to_s}/db-img/project#{@project.id}/1.jpg") %>
+	            
+				</div>
 
-					            </div>
+	            <div class="swiper-slide">
 
-					            <div class="swiper-slide">
+	            	<img class="image-projects" src="assets/db-img/project<%= @project.id %>/2.jpg"/>
 
-					            	<img class="image-projects" src="assets/db-img/project<%= @project.id %>/3.jpg"/>
+	            </div>
 
-					            </div>
-					        
-					        </div>
+	            <div class="swiper-slide">
 
-							    <div class="swiper-button-next"></div>
+	            	<img class="image-projects" src="assets/db-img/project<%= @project.id %>/3.jpg"/>
 
-        						<div class="swiper-button-prev"></div>
+	            </div>
+	        
+	        </div>
 
-						</div>
+			    <div class="swiper-button-next"></div>
 
-					</div>
+				<div class="swiper-button-prev"></div>
 
-					<div class="layout-two-column-grid layout-column-right">
+		</div>
 
-						<p class="expanded-project-description">
-							<%= @project.description %>
-						</p>
+	</div>
 
-					</div>
+	<div class="layout-two-column-grid layout-column-right">
+
+		<a href="" class="link-back-to-all"></a>
+
+		<p class="expanded-project-description">
+			<%= @project.description %>
+		</p>
+
+	</div>
+
+</article>
+
+

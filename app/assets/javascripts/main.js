@@ -1,9 +1,3 @@
-// Lazy Load
-
-    $("img.lazy").lazyload({
-        event : "loadimages"
-    });
-
 // Switch Datapoints on click X
 
 	$(document).on('click', '.dataset-x', function(e) {
@@ -24,25 +18,39 @@
 
 // Designer Expand 
 
-	$(document).on('click', '.list-all-designers li', function(e) {
+$(document).ready(function() {
+
+	$(".layout-container").on('click', '.list-all-designers li', function(e) {
 		e.preventDefault(); 
 
 		var selected_designer = $(this).attr('name');
 
-		$('body').addClass('is--menu--active');
+		$('body').addClass('active--project--expand');
 
-		$('.layout-designer-expanded').load("/projects/" + selected_designer);
+		$('.layout-project-expanded-container').load("/projects/" + selected_designer, function() {
+  		
+		});
 	})
+  $('.layout-container').on('click', '.link-back-to-all', function(e) {
+  e.preventDefault(); 
+    alert('de');
+  })
 
-// Designer Close
+});
 
-	$(document).on('click', '.layout-designer-expanded .link-back-to-all', function(e) {
-		e.preventDefault(); 
-			$('.layout-project-expanded').addClass('active--project--collapse');
-			$('.layout-project-expanded').removeClass('active--project--expand');
-			$('.layout-project-expanded').removeClass('active--project--expand');
-			$('body').removeClass('active--project--expand');
-	})
+	
+
+// Swiper 
+
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true
+    });
 
 // Scroll To Class Menu Function 
 
@@ -63,9 +71,16 @@
 	$(document).on('click', '.js-manifesto', function(e) {
           e.preventDefault(); 
     		
-          $('.article-info-block').fadeOut();
-          $('.article-manifesto-block').fadeIn();
-      });
+          $('.article-info-block').fadeOut(500);
+          $('.article-manifesto-block').delay(500).fadeIn(1000);
+     });
+
+	$(document).on('click', '.js-about', function(e) {
+          e.preventDefault(); 
+    		
+          $('.article-manifesto-block').fadeOut(500);
+          $('.article-info-block').delay(500).fadeIn(1000);
+     });
 
 // Change header on scroll 
 
@@ -79,3 +94,4 @@ $(window).scroll(function(){
 		    $('header').removeClass('header--collapse');
 		}
 	});
+

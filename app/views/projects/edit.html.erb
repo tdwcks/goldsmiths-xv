@@ -3,8 +3,8 @@
 	<div class="backend-toolbar">
 
 		<div class="backend-container">
-			<p><%= link_to "Back To Site", projects_path %></p>
-			<p><%= link_to "Add a Project", new_project_path %></p>
+			<%= link_to "Back To Site", projects_path %>
+			<%= link_to "Add a Project", new_project_path %>
 		</div>
 
 	</div>
@@ -19,9 +19,7 @@
 		  	  <%= form.input :designer, label: "Designer Name" %>
 		  	  <%= form.input :url, label: "Designer / Project Website" %>
 		  	  <%= form.input :email, label: "Designers Email" %>
-		  	  <%= form.input :image_folder, label: "image_folder" %>
-		  	  <%= form.input :quote, label: "Quote", as: :text, :input_html => {:rows => 2} %>
-		  	  <%= form.input :description, label: "Description", as: :text, :input_html => {:rows => 10} %>
+		  	  <%= form.input :vimeo_link, label: "Vimeo Link" %>
 		  	  <%= form.input :twitter, label: "Twitter" %>
 		  	  <%= form.input :data_slow, label: "Data Slow" %>
 		  	  <%= form.input :data_past, label: "Data Past" %>
@@ -31,6 +29,9 @@
 		  	  <%= form.input :data_natural, label: "Data Natural" %>
 		  	  <%= form.input :data_fiction, label: "Data Fiction" %>
 		  	  <%= form.input :data_for, label: "Data For" %>
+		  	  <%= form.input :description, label: "Description", as: :text, :input_html => {:rows => 10} %>
+		  	  <%= form.input :quote, label: "Quote", as: :text, :input_html => {:rows => 2} %>
+		  	  
 		  	  <%= form.button :submit %>
 		<% end %>
 

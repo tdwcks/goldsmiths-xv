@@ -1,0 +1,1483 @@
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+@font-face {
+  font-family: 'cinetype Halflings';
+  src: url(/assets/GT-Cinetype-Regular-29c28fd38c932f6b97691b10463ea3793dec46d5b45f921ec28f6650a9c00786.eot);
+  src: url(/assets/GT-Cinetype-Regular-29c28fd38c932f6b97691b10463ea3793dec46d5b45f921ec28f6650a9c00786.eot?#iefix) format("embedded-opentype"), url(/assets/GT-Cinetype-Regular-2dab14626c11502c70fd7f9d4515b9f2253676d6eecf88a734ac99f9aeb5382f.woff) format("woff"), url(/assets/GT-Cinetype-Regular-0a165f4edd6e24d3fad72b3a43aa9fa9bf5f29b0781a9facb2e797272dafc4f6.ttf) format("truetype"), url(/assets/GT-Cinetype-Regular-b40fac4acf39ffa4940adb701f67afdee427e1a5c0ef922570d45dc7135855e6.svg#glyphicons-halflingsregular) format("svg");
+}
+/* line 17, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: 200;
+  position: relative;
+}
+
+/* line 24, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+h1 {
+  font-size: 4.6875em;
+  line-height: 0.96em;
+  font-weight: normal;
+}
+
+/* line 30, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+h2 {
+  color: #fff;
+  font-size: 2.5em;
+  line-height: 1.2em;
+}
+
+/* line 36, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+h3 {
+  font-size: 2em;
+  line-height: 1.125em;
+  color: #afadaf;
+}
+/* line 41, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+h3.backend-project-link a {
+  color: #151515;
+  text-decoration: none;
+  border-bottom: 2px solid #151515;
+  margin-bottom: 25px;
+}
+
+/* line 49, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+h4 {
+  color: #151515;
+  font-size: 1.875em;
+  line-height: 1.2em;
+  padding-bottom: 18px;
+  color: #e6e3e3;
+}
+/* line 56, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+h4.expanded-project-name {
+  font-size: 1.4em;
+  color: #e6e3e3;
+}
+/* line 61, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+h4.backend-project-designer {
+  font-size: 1.2em;
+  color: #454345;
+  margin-bottom: 20px;
+  padding: 25px 0px 0px 0px;
+}
+
+/* line 69, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+h5 {
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
+/* line 73, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+h5.expanded-designer-name {
+  font-size: 0.9em;
+  color: #afadaf;
+}
+/* line 78, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+h5.type-data-title {
+  color: #fff;
+  font-size: 0.9em;
+  text-align: right;
+  display: block;
+  padding: 2px 0 5px 0;
+}
+
+/* line 87, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+p {
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+/* line 92, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+p a {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+/* line 99, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+p strong {
+  font-weight: bold;
+}
+/* line 103, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+p em {
+  font-style: italic;
+}
+/* line 107, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+p .side-matter-ref {
+  border: none;
+}
+/* line 110, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+p .side-matter-ref sup {
+  font-size: 0.6em;
+  margin-left: 0;
+}
+/* line 116, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+p.expanded-project-description {
+  color: #e6e3e3;
+  width: 70%;
+  margin-left: 90px;
+  font-family: "Times new roman";
+  font-size: 1em;
+  margin-top: 0;
+  line-height: 1.6em;
+  padding-bottom: 10px;
+  margin-top: 100px;
+  display: block;
+  clear: both;
+}
+/* line 130, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+p.type-hero {
+  color: #fff;
+  font-size: 0.95em;
+  font-family: "Times new roman";
+  margin-top: 0;
+  line-height: 1.5em;
+  padding-bottom: 10px;
+}
+/* line 139, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+p.type-smallest {
+  color: #e6e3e3;
+  font-size: 1.1em;
+  margin-top: 0;
+  line-height: 1.8em;
+  padding-bottom: 10px;
+}
+/* line 147, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+p.type-large-full {
+  width: 100%;
+  font-size: 1.875em;
+  color: #e6e3e3;
+  text-align: left;
+  padding-bottom: 25px;
+}
+/* line 155, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+p.backend-project-description {
+  width: 100%;
+  font-size: 1em;
+  color: #454345;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+/* line 164, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+span {
+  font-weight: 100;
+}
+/* line 167, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+span.event-date {
+  font-family: "Times new roman";
+  color: #fff;
+  display: block;
+  padding: 10px 0 10px 0;
+  font-size: 1.3em;
+}
+/* line 175, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+span.event-details {
+  font-family: "Times new roman";
+  color: #fff;
+  display: block;
+  padding: 10px 0px;
+  font-size: 0.95em;
+}
+/* line 182, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+span.event-details br {
+  line-height: 2em;
+  padding: 30px;
+  display: block;
+}
+/* line 188, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/type.scss */
+span.event-details:last-child {
+  padding-bottom: 500px;
+}
+
+/* line 7, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/forms.scss */
+form {
+  display: block;
+  min-height: 100%;
+}
+
+/* line 12, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/forms.scss */
+div.input {
+  width: 100%;
+  position: relative;
+  clear: both;
+}
+/* line 17, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/forms.scss */
+div.input label {
+  clear: both;
+  display: block;
+  font-size: 1em;
+  font-family: cinetype, sans-serif;
+}
+
+/* line 25, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/forms.scss */
+input[type=text] {
+  border-radius: 0;
+  margin: 1.5em 0em 1.5em 0em;
+  -webkit-appearance: none;
+  text-align: left;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1em;
+  display: block;
+  color: #4d4d4d;
+  width: -moz-calc(100% - 40px);
+  width: -webkit-calc(100% - 40px);
+  width: calc(100% - 40px);
+  background: #e6e6e6;
+  font-family: cinetype, sans-serif;
+  font-weight: 300;
+}
+/* line 40, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/forms.scss */
+input[type=text]:focus {
+  color: #fff;
+  outline: 0;
+  background: #4d4d4d;
+}
+
+/* line 47, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/forms.scss */
+input[type=email] {
+  border-radius: 0;
+  margin: 1.5em 0em 1.5em 0em;
+  -webkit-appearance: none;
+  text-align: left;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1em;
+  display: block;
+  color: #4d4d4d;
+  width: -moz-calc(100% - 40px);
+  width: -webkit-calc(100% - 40px);
+  width: calc(100% - 40px);
+  background: #e6e6e6;
+  font-family: cinetype, sans-serif;
+  font-weight: 300;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 63, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/forms.scss */
+input[type=email]:focus {
+  color: #fff;
+  outline: 0;
+  background: #4d4d4d;
+}
+
+/* line 70, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/forms.scss */
+input[type=url] {
+  border-radius: 0;
+  margin: 1.5em 0em 1.5em 0em;
+  -webkit-appearance: none;
+  text-align: left;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1em;
+  display: block;
+  color: #4d4d4d;
+  width: -moz-calc(100% - 40px);
+  width: -webkit-calc(100% - 40px);
+  width: calc(100% - 40px);
+  background: #e6e6e6;
+  font-family: cinetype, sans-serif;
+  font-weight: 300;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 86, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/forms.scss */
+input[type=url]:focus {
+  color: #fff;
+  outline: 0;
+  background: #4d4d4d;
+}
+
+/* line 93, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/forms.scss */
+textarea {
+  clear: both;
+  border-radius: 0;
+  margin: 1.5em 0em 1.5em 0em;
+  -webkit-appearance: none;
+  text-align: left;
+  border: none;
+  padding: 20px 20px;
+  font-size: 1em;
+  display: block;
+  line-height: 1.7em;
+  float: left;
+  resize: none;
+  color: #4d4d4d;
+  width: -moz-calc(100% - 40px);
+  width: -webkit-calc(100% - 40px);
+  width: calc(100% - 40px);
+  background: #e6e6e6;
+  font-family: cinetype, sans-serif;
+  font-weight: 300;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 113, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/forms.scss */
+textarea:focus {
+  color: #fff;
+  outline: 0;
+  background: #4d4d4d;
+}
+
+/* line 120, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/forms.scss */
+.studio_latitude {
+  width: 48%;
+  float: left;
+}
+
+/* line 125, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/forms.scss */
+.studio_longitude {
+  clear: none;
+  margin-left: 4%;
+  width: 48%;
+  float: left;
+}
+
+/* line 132, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/forms.scss */
+fieldset.half {
+  width: 48%;
+}
+
+/* line 136, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/forms.scss */
+fieldset.right {
+  margin-left: 4%;
+}
+
+/* line 141, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/forms.scss */
+input[type=submit] {
+  right: 0;
+  top: 0;
+  background: #333333;
+  color: #fff;
+  display: block;
+  margin: 0;
+  margin-top: 10px;
+  border-radius: 0;
+  -webkit-appearance: none;
+  padding: 5px 20px 5px 20px;
+  border: 0;
+  width: 180px;
+  line-height: 1em;
+  font-size: 1.1em;
+  font-family: cinetype, sans-serif;
+  font-weight: 300;
+  float: right;
+  clear: both;
+  height: 55px;
+  position: relative;
+}
+/* line 163, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/forms.scss */
+input[type=submit]:hover {
+  background-color: #07af94;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 16, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/base.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 22, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/base.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 30, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/base.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 34, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/base.scss */
+body,
+html {
+  min-height: 100%;
+  height: 100%;
+}
+
+/* line 40, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/base.scss */
+body:after {
+  position: fixed !important;
+}
+
+/* line 44, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/base.scss */
+body {
+  background: #000;
+  font-family: cinetype, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  margin: 0;
+}
+
+/* line 52, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/base.scss */
+.background-white {
+  background: #fff;
+  min-height: 100%;
+  padding-bottom: 100px;
+}
+
+/* line 58, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/base.scss */
+img,
+iframe {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* line 64, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/base.scss */
+::-moz-selection {
+  color: #000;
+  background: rgba(255, 255, 255, 0.99);
+  text-shadow: none;
+}
+
+/* line 70, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/base.scss */
+::selection {
+  color: #000;
+  background: rgba(255, 255, 255, 0.99);
+  text-shadow: none;
+}
+
+/* line 7, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/layout.scss */
+.layout-container {
+  display: block;
+  margin: 0px auto;
+  width: -moz-calc(90%);
+  width: -webkit-calc(90%);
+  width: calc(90%);
+  max-width: 1200px;
+  position: relative;
+}
+
+/* line 15, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/layout.scss */
+.a-block {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+/* line 20, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/layout.scss */
+.a-block:hover {
+  cursor: pointer;
+}
+
+/* line 25, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/layout.scss */
+.layout-one-column-grid {
+  float: left;
+  width: -moz-calc(25% - 18px);
+  width: -webkit-calc(25% - 18px);
+  width: calc(25% - 18px);
+  margin-right: 24px;
+}
+
+/* line 31, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/layout.scss */
+.layout-two-column-grid {
+  float: left;
+  width: -moz-calc(50% - 14px);
+  width: -webkit-calc(50% - 14px);
+  width: calc(50% - 14px);
+}
+
+/* line 36, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/layout.scss */
+.layout-three-column-grid {
+  display: block;
+  float: left;
+  width: -moz-calc(75% - 14px);
+  width: -webkit-calc(75% - 14px);
+  width: calc(75% - 14px);
+}
+
+/* line 42, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/layout.scss */
+.layout-column-right {
+  margin-right: 0px;
+  float: right;
+}
+
+/* line 47, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/layout.scss */
+.layout-clear {
+  clear: both;
+}
+
+/* line 51, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/layout.scss */
+.layout-clear-top {
+  margin-top: 130px;
+  display: block;
+}
+
+/* line 7, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/links.scss */
+.link-get-directions {
+  font-family: "Times new roman";
+  font-size: 0.8em;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 21px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 16, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/links.scss */
+.link-get-directions:hover {
+  color: #fff;
+}
+
+/* line 21, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/links.scss */
+.link-back-to-all {
+  padding-bottom: 125px;
+  display: block;
+  font-size: 0.9em;
+  color: #e6e3e3;
+  width: 140px;
+  position: relative;
+  float: right;
+  text-decoration: none;
+  text-align: left;
+}
+/* line 32, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/links.scss */
+.link-back-to-all:hover {
+  color: #fff;
+}
+/* line 36, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/links.scss */
+.link-back-to-all:after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 3px;
+  right: 0;
+  background-image: url("/assets/exit_icon-45c9ec1d2ceca7190f19d24a933fced95d47b2b6aa81b8dc4ac3f23ad98aba9b.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* line 50, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/links.scss */
+.link-expanded-email {
+  font-size: 0.9em;
+  color: #e6e3e3;
+  text-decoration: none;
+  display: block;
+  padding: 1px 0;
+  font-family: "Times new roman, serif";
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 59, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/links.scss */
+.link-expanded-email:hover {
+  color: #fff;
+}
+
+/* line 64, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/links.scss */
+.link-switch-dataset {
+  color: #e6e3e3;
+  font-size: 0.8em;
+  display: block;
+  text-decoration: none;
+  padding: 2px 0;
+  position: relative;
+  text-align: right;
+}
+/* line 73, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/links.scss */
+.link-switch-dataset:hover {
+  color: #fff;
+}
+
+/* line 78, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/links.scss */
+.link-switch-dataset.dataset--active:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 12px;
+  right: -10px;
+}
+
+/* line 7, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/z.scss */
+header {
+  z-index: 10;
+}
+
+/* line 11, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/z.scss */
+.button-menu {
+  z-index: 10000;
+}
+
+/* line 15, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/z.scss */
+.layout-menu {
+  z-index: 10;
+}
+
+/* line 19, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/z.scss */
+.backend-toolbar {
+  z-index: 10;
+}
+
+@-webkit-keyframes project--in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    z-index: 10;
+  }
+}
+@-moz-keyframes project--in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    z-index: 10;
+  }
+}
+@-o-keyframes project--in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    z-index: 10;
+  }
+}
+@keyframes project--in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    z-index: 10;
+  }
+}
+@-webkit-keyframes project--out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@-moz-keyframes project--out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@-o-keyframes project--out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes project--out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+/* line 7, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/canvas.scss */
+.container-canvas {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 400px;
+  padding: 0;
+  top: 120px;
+  left: 29%;
+}
+
+/* line 19, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/canvas.scss */
+.person {
+  height: 5px;
+  width: 5px;
+  display: block;
+  border-radius: 5px;
+  position: absolute;
+  background: #fff;
+}
+
+/* line 27, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/canvas.scss */
+.people {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 400px;
+  padding: 0;
+  top: 120px;
+  left: 29%;
+}
+
+/* line 38, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/canvas.scss */
+h1 {
+  display: none;
+  font-size: 0.7em;
+  display: block;
+  position: absolute;
+  top: -4px;
+  right: 10px;
+  color: #fff;
+}
+
+/* line 48, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/canvas.scss */
+.axis {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 400px;
+  padding: 0;
+  top: 120px;
+  left: 29%;
+}
+
+/* line 59, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/canvas.scss */
+.x-axis {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+}
+
+/* line 67, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/canvas.scss */
+.x-axis-label-low {
+  position: absolute;
+  top: 43%;
+  left: 0px;
+  color: #fff;
+  font-size: 0.9em;
+}
+
+/* line 75, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/canvas.scss */
+.x-axis-label-high {
+  position: absolute;
+  top: 43%;
+  right: 0px;
+  color: #fff;
+  font-size: 0.9em;
+}
+
+/* line 83, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/canvas.scss */
+.y-axis {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  background: #fff;
+}
+
+/* line 91, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/canvas.scss */
+.y-axis-label-high {
+  position: absolute;
+  top: 0px;
+  font-size: 0.9em;
+  left: 52%;
+  color: #fff;
+}
+
+/* line 99, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/canvas.scss */
+.y-axis-label-low {
+  position: absolute;
+  bottom: 0px;
+  font-size: 0.9em;
+  left: 52%;
+  color: #fff;
+}
+
+/* line 107, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/base/canvas.scss */
+#network {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  width: 100.2%;
+  height: 400px;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+/* line 1, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-container {
+  background: #1a1a1a;
+  min-width: 100%;
+  height: 370px;
+  display: block;
+  position: relative;
+  margin-top: 30px;
+}
+
+/* line 10, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-slide {
+  height: 400px;
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* line 29, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-container {
+  position: relative;
+  overflow: hidden;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+}
+
+/* line 36, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-container-no-flexbox .swiper-slide {
+  float: left;
+}
+
+/* line 39, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-container-vertical > .swiper-wrapper {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+/* line 46, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
+  transition-property: transform;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 69, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-container-android .swiper-slide,
+.swiper-wrapper {
+  -webkit-transform: translate3d(0px, 0, 0);
+  -moz-transform: translate3d(0px, 0, 0);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate3d(0px, 0, 0);
+  transform: translate3d(0px, 0, 0);
+}
+
+/* line 77, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-container-multirow > .swiper-wrapper {
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -ms-fles-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* line 84, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-container-free-mode > .swiper-wrapper {
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  margin: 0 auto;
+}
+
+/* line 92, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-slide {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-flex-shrink: 0;
+  -ms-flex: 0 0 auto;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* a11y */
+/* line 105, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-container .swiper-notification {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: -1000;
+}
+
+/* IE10 Windows Phone 8 Fixes */
+/* line 114, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-wp8-horizontal {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+
+/* line 118, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-wp8-vertical {
+  -ms-touch-action: pan-x;
+  touch-action: pan-x;
+}
+
+/* Arrows */
+/* line 123, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  height: 44px;
+  margin-top: -22px;
+  z-index: 10000;
+  cursor: pointer;
+  -moz-background-size: 27px 44px;
+  -webkit-background-size: 27px 44px;
+  background-size: 27px 44px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 138, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: auto;
+  pointer-events: none;
+}
+
+/* line 144, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+  left: 25px;
+  right: auto;
+}
+
+/* line 150, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-button-prev.swiper-button-black,
+.swiper-container-rtl .swiper-button-next.swiper-button-black {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
+}
+
+/* line 154, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-button-prev.swiper-button-white,
+.swiper-container-rtl .swiper-button-next.swiper-button-white {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+}
+
+/* line 158, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+  right: 25px;
+  left: auto;
+}
+
+/* line 164, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-button-next.swiper-button-black,
+.swiper-container-rtl .swiper-button-prev.swiper-button-black {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
+}
+
+/* line 168, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-button-next.swiper-button-white,
+.swiper-container-rtl .swiper-button-prev.swiper-button-white {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+}
+
+/* Pagination Styles */
+/* line 173, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+/* line 186, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-pagination.swiper-pagination-hidden {
+  opacity: 0;
+}
+
+/* line 189, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: 0.4;
+}
+
+/* line 197, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+}
+
+/* line 200, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-pagination-white .swiper-pagination-bullet {
+  background: #fff;
+}
+
+/* line 203, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #fff;
+}
+
+/* line 207, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-pagination-white .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+/* line 210, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-pagination-black .swiper-pagination-bullet-active {
+  background: #000;
+}
+
+/* line 213, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-container-vertical > .swiper-pagination {
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translate3d(0px, -50%, 0);
+  -moz-transform: translate3d(0px, -50%, 0);
+  -o-transform: translate(0px, -50%);
+  -ms-transform: translate3d(0px, -50%, 0);
+  transform: translate3d(0px, -50%, 0);
+}
+
+/* line 222, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-container-vertical > .swiper-pagination .swiper-pagination-bullet {
+  margin: 5px 0;
+  display: block;
+}
+
+/* line 226, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-container-horizontal > .swiper-pagination {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+/* line 231, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/slider.scss */
+.swiper-container-horizontal > .swiper-pagination .swiper-pagination-bullet {
+  margin: 0 5px;
+}
+
+/* line 7, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/articles.scss */
+.layout-hero {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+@media (max-width: 1047px) {
+  /* line 7, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/articles.scss */
+  .layout-hero {
+    max-height: 625px;
+  }
+}
+
+/* line 18, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/articles.scss */
+.article-data-list {
+  display: block;
+  padding-top: 0;
+  margin: 0;
+  width: 180px;
+  float: right;
+  clear: both;
+}
+/* line 26, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/articles.scss */
+.article-data-list .list-data-y {
+  padding: 0;
+}
+
+/* line 31, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/articles.scss */
+.article-manifesto-block {
+  display: none;
+  padding-top: 12px;
+}
+
+/* line 36, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/articles.scss */
+.layout-designers {
+  position: relative;
+  width: 100%;
+  height: -moz-calc(100vh - 70px);
+  height: -webkit-calc(100vh - 70px);
+  height: calc(100vh - 70px);
+}
+/* line 41, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/articles.scss */
+.layout-designers .layout-designer-expanded {
+  width: 100%;
+  clear: both;
+}
+/* line 46, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/articles.scss */
+.layout-designers .layout-designer-list {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+}
+/* line 52, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/articles.scss */
+.active--project--expand .layout-designers .layout-designer-list {
+  display: none;
+  -webkit-animation: project--out 0.5s forwards;
+  -moz-animation: project--out 0.5s forwards;
+  animation: project--out 0.5s forwards;
+}
+/* line 57, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/articles.scss */
+.active--project--collapse .layout-designers .layout-designer-list {
+  -webkit-animation: project--in 1s forwards;
+  -moz-animation: project--in 1s forwards;
+  animation: project--in 1s forwards;
+}
+/* line 62, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/articles.scss */
+.layout-designers .layout-designer-expanded {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  clear: both;
+  min-height: 100%;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  z-index: -100;
+}
+/* line 73, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/articles.scss */
+.layout-designers .layout-designer-expanded.active--project--expand {
+  -webkit-animation: project--in 1s forwards;
+  -moz-animation: project--in 1s forwards;
+  animation: project--in 1s forwards;
+}
+/* line 77, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/articles.scss */
+.layout-designers .layout-designer-expanded.active--project--collapse {
+  -webkit-animation: project--out 1s forwards;
+  -moz-animation: project--out 1s forwards;
+  animation: project--out 1s forwards;
+}
+
+/* line 7, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/buttons.scss */
+a.expanded-url {
+  color: #afadaf;
+  font-size: 0.85em;
+  text-decoration: none;
+  margin-left: 10px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/* line 14, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/buttons.scss */
+a.expanded-url:hover {
+  color: #fff;
+}
+
+/* line 19, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/buttons.scss */
+a.expanded-email {
+  color: #afadaf;
+  font-size: 0.85em;
+  text-decoration: none;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/* line 25, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/buttons.scss */
+a.expanded-email:hover {
+  color: #fff;
+}
+
+/* line 30, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/buttons.scss */
+a.back-to-all {
+  color: #fff;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+/* line 7, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/lists.scss */
+ul.list-all-designers {
+  color: #fff;
+  font-weight: 100;
+  padding: 0 0 50px 0;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+/* line 14, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/lists.scss */
+ul.list-all-designers li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding: 13px 0px;
+  position: relative;
+  cursor: pointer;
+}
+/* line 22, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/lists.scss */
+ul.list-all-designers li:hover > .list-designer-name {
+  opacity: 0;
+}
+/* line 26, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/lists.scss */
+ul.list-all-designers li:hover > .list-project-name {
+  opacity: 1;
+}
+/* line 30, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/lists.scss */
+ul.list-all-designers li a {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: inline;
+  top: 0;
+  outline: 0;
+  font-size: 0.9em;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 41, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/lists.scss */
+ul.list-all-designers li .list-number {
+  color: #fff;
+  font-size: 0.9em;
+  top: 17px;
+  font-family: "Times New Roman";
+  font-style: italic;
+  position: absolute;
+  left: 0px;
+}
+/* line 51, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/lists.scss */
+ul.list-all-designers li .list-designer-name {
+  color: #fff;
+  left: 35px;
+}
+/* line 56, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/lists.scss */
+ul.list-all-designers li .list-project-name {
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left: 35px;
+  opacity: 0;
+}
+
+/* line 7, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/images.scss */
+.image-projects {
+  padding: 25px 0;
+  display: block;
+}
+
+/* line 7, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/backend.scss */
+.backend-toolbar {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  background: #fff;
+}
+
+/* line 15, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/backend.scss */
+.backend-container {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 21, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/backend.scss */
+.projects-holder {
+  padding-top: 150px;
+}
+/* line 24, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/backend.scss */
+.projects-holder a {
+  display: inline;
+  padding-top: 15px;
+}
+
+/* line 30, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/backend.scss */
+.backend-project {
+  border-top: 1px solid #e6e3e3;
+  padding: 20px 0px;
+}
+/* line 34, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/backend.scss */
+.backend-project:last-child {
+  border-bottom: 1px solid #e6e3e3;
+}
+
+/* line 7, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/header.scss */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  padding-top: 50px;
+  background-image: -webkit-linear-gradient( black 30%, transparent 100%);
+  background-image: linear-gradient( black 30%, transparent 100%);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+/* line 17, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/header.scss */
+header .header-logo-large {
+  font-size: 1em;
+  color: #fff;
+  text-transform: uppercase;
+  float: right;
+  position: relative;
+}
+/* line 25, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/header.scss */
+header .header-logo-large:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  width: 25px;
+  height: 25px;
+  background-image: url("/assets/x_dot_logo-20e559ddafad8081109181799c276f8adea538a5669f542fd0467aa96af56073.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 39, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/header.scss */
+header .header-logo-large:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+  background-image: url("/assets/v_dot_logo-4b133e2b58e2e4c62cd735cf2074e526d0765e9b2d56f6bd3abd6e001942126d.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 55, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/header.scss */
+header.header--collapse {
+  height: 50px;
+  padding-top: 20px;
+}
+/* line 61, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/header.scss */
+header.header--collapse .header-logo-large:after {
+  opacity: 0;
+}
+/* line 65, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/header.scss */
+header.header--collapse .header-logo-large:before {
+  opacity: 0;
+}
+
+/* line 72, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/header.scss */
+nav {
+  display: block;
+  margin-top: 0;
+  width: 50%;
+  float: left;
+}
+/* line 78, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/header.scss */
+nav .menu-items {
+  display: inline;
+}
+/* line 81, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/header.scss */
+nav .menu-items li {
+  float: left;
+  padding: 0 0 0 30px;
+  list-style-type: none;
+}
+/* line 86, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/header.scss */
+nav .menu-items li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95em;
+}
+/* line 91, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/header.scss */
+nav .menu-items li a.menu--item--active {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2px;
+}
+/* line 97, /Users/Tom/Localhost/apps/goldsmiths-xv/app/assets/stylesheets/modules/header.scss */
+nav .menu-items li:first-child {
+  padding-left: 0;
+}

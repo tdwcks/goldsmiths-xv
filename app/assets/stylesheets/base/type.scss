@@ -8,11 +8,7 @@ $main_font: cinetype, sans-serif;
 
 $base_font_size: 18px;
 
-@font-face {
-  font-family: 'cinetype Halflings';
-  src: asset-url('GT-Cinetype-Regular.eot');
-  src: asset-url('GT-Cinetype-Regular.eot?#iefix') format('embedded-opentype'), asset-url('GT-Cinetype-Regular.woff') format('woff'), asset-url('GT-Cinetype-Regular.ttf') format('truetype'), asset-url('GT-Cinetype-Regular.svg#glyphicons-halflingsregular') format('svg');
-}
+@include font-face(cinetype, '/assets/GT-Cinetype-Regular', 300);
 
 h1, h2, h3, h4, h5, h6 {
   padding: 0;
@@ -78,7 +74,7 @@ h5 {
     &.type-data-title {
       color: #fff;
       font-size: 0.9em;
-      text-align: right;
+      text-align: left;
       display: block;
       padding: 2px 0 5px 0;
     }
@@ -169,19 +165,20 @@ span {
     color: #fff;
     display: block;
     padding: 10px 0 10px 0;
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   &.event-details {
     font-family: "Times new roman";
     color: #fff;
     display: block;
-    padding: 10px 0px;
-    font-size: 0.95em;
+    padding: 0px 0px;
+    font-size: 1em;
+    line-height: 1em;
+    padding-top: 45px;
 
     br {
-      line-height: 2em;
-      padding: 30px;
+      line-height: 1.4em;
       display: block;
     }
 

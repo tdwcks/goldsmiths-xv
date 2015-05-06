@@ -8,8 +8,8 @@
     position: absolute;
     display: block;
     margin: 0 auto;
-    width: 50%;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     padding: 0;
     top: 120px;
     left: 29%;
@@ -17,40 +17,47 @@
 
 
 .person{
-    height: 5px;
-    width: 5px;
+    height: 2px;
+    width: 2px;
     display: block;
-    border-radius: 5px;
+    border-radius: 2px;
     position: absolute;
     background: #fff;
+
+  h1 {
+      font-size: 0.7em;
+      display: none;
+      position: absolute;
+      top: -4px;
+      right: 10px;
+  }
 }
+
 .people{
     position: absolute;
     display: block;
     margin: 0 auto;
-    width: 50%;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     padding: 0;
     top: 120px;
     left: 29%;
 }
 
- h1 {
-    display: none;
+h1 {
     font-size: 0.7em;
-    display: block;
+    display: none;
     position: absolute;
     top: -4px;
     right: 10px;
-    color: #fff;
 }
 
 .axis {
     position: absolute;
     display: block;
     margin: 0 auto;
-    width: 50%;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     padding: 0;
     top: 120px;
     left: 29%;
@@ -61,21 +68,21 @@
     top: 50%;
     width: 100%;
     height: 1px;
-    background: #fff;
+     background: $colour_lightgrey;
 }
 
 .x-axis-label-low {
     position: absolute;
-    top: 43%;
-    left: 0px;
+    top: 47.5%;
+    left: -50px;
     color: #fff;
     font-size: 0.9em;
 }
 
 .x-axis-label-high {
     position: absolute;
-    top: 43%;
-    right: 0px;
+    top: 47.5%;
+    right: -50px;
     color: #fff;
     font-size: 0.9em;
 }
@@ -85,22 +92,22 @@
     left: 50%;
     height: 100%;
     width: 1px;
-    background: #fff;
+    background: $colour_lightgrey;
 }
 
 .y-axis-label-high {
     position: absolute;
-    top: 0px;
+    top: -40px;
     font-size: 0.9em;
-    left: 52%;
+    left: 47%;
     color: #fff;
 }
 
 .y-axis-label-low {
     position: absolute;
-    bottom: 0px;
+    bottom: -40px;
     font-size: 0.9em;
-    left: 52%;
+    left: 47%;
     color: #fff;
 }
 
@@ -109,7 +116,7 @@
     display: block;
     margin: 0 auto;
     width: 100.2%;
-    height: 400px;
+    height: 450px;
     padding: 0;
     top: 0;
     left: 0;

@@ -1,6 +1,6 @@
 
 function drawLine(context,p1,p2){//draws a line on the canvas context between p1 and p2, which are xy objects
-    context.lineWidth = 0.6
+    context.lineWidth = 0.2
     context.beginPath();
     context.strokeStyle = '#fff';
     context.moveTo(p1.x,p1.y);
@@ -11,29 +11,19 @@ function drawLine(context,p1,p2){//draws a line on the canvas context between p1
 function quickRand(n){//returns a random number between 0 and n
     return Math.floor(Math.random()*n);
 }
-function calculatePointDistance(point1,point2){
-    return Math.sqrt(Math.pow((point1.x-point2.x),2)+Math.pow((point1.y-point2.y),2))
-}
-function findClosestPoint(pointIn,allPoints){
-    closestPoint = false
-    distance = 10000000
-    $(allPoints).each(function(pointIndex,pointValue){
-        newDistance = calculatePointDistance(pointIn,pointValue)
-        if (distance > newDistance){
-            if (newDistance != 0){
-                distance = newDistance
-                closestPoint = pointValue
-            }
-        }
-    })
-    return closestPoint
-}
+
 function drawNetwork(canvasIn,pointsIn,networkDensity){//draws a set of lines on canvasIn between pointsIn, with desnity proportional to networkDensity
     var context = canvasIn.getContext('2d');
     $(points).each(function(pointI,pointV){
-        closestPoint = findClosestPoint(pointV,pointsIn)
-        drawLine(context,pointV,closestPoint);
+        drawLine(context,pointV,points[quickRand(points.length)]);
     });
+    //for (i=0;i<1;i++){
+        if (quickRand(10) < networkDensity){
+            $(points).each(function(pointI,pointV){
+                drawLine(context,pointV,points[quickRand(points.length)]);
+            });
+        }
+    //}
 }
 
 function getPoints(identifier){//make a list of XY objects from all elements matching jquery pattern identifier
@@ -43,6 +33,39 @@ function getPoints(identifier){//make a list of XY objects from all elements mat
     })
     return points;
 }
+//function calculatePointDistance(point1,point2){
+//    return Math.sqrt(Math.pow((point1.x-point2.x),2)+Math.pow((point1.y-point2.y),2))
+//}
+//function findClosestPoint(pointIn,allPoints){
+//    closestPoint = false
+//    distance = 10000000
+//    $(allPoints).each(function(pointIndex,pointValue){
+//        newDistance = calculatePointDistance(pointIn,pointValue)
+//        if (distance > newDistance){
+//            if (newDistance != 0){
+//                distance = newDistance
+//                closestPoint = pointValue
+//            }
+//        }
+//    })
+//    return closestPoint
+//}
+
+//function drawNetwork(canvasIn,pointsIn,networkDensity){//draws a set of lines on canvasIn between pointsIn, with desnity proportional to networkDensity
+//    var context = canvasIn.getContext('2d');
+//    $(points).each(function(pointI,pointV){
+//        closestPoint = findClosestPoint(pointV,pointsIn)
+//        drawLine(context,pointV,closestPoint);
+//    });
+//}
+
+//function getPoints(identifier){//make a list of XY objects from all elements matching jquery pattern identifier
+//    points = []
+//    $(identifier).each(function(pointI,pointV){
+//        points.push(pointToXY($(pointV)));
+//    })
+//    return points;
+//}
 
 function pointToXY(pointIn){//turn a point element into a xy object
     XY = {

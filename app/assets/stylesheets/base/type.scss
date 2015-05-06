@@ -8,7 +8,11 @@ $main_font: cinetype, sans-serif;
 
 $base_font_size: 18px;
 
-@include font-face(cinetype, '/assets/GT-Cinetype-Regular', 300);
+@font-face {
+  font-family: 'cinetype Halflings';
+  src: url('/assets/GT-Cinetype-Regular.eot');
+  src: url('/assets/GT-Cinetype-Regular.eot?#iefix') format('embedded-opentype'), url('/assets/GT-Cinetype-Regular.woff') format('woff'), url('/assets/GT-Cinetype-Regular.ttf') format('truetype'), url('/assets/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
 
 h1, h2, h3, h4, h5, h6 {
   padding: 0;

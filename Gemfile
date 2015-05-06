@@ -48,7 +48,7 @@ group :development, :test do
   gem 'spring'
 end
 
-group :production do
+group :staging, :production do
   gem 'pg'
   gem 'rails_12factor'
 end

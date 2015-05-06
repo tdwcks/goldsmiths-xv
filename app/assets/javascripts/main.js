@@ -31,6 +31,11 @@ $(document).ready(function() {
   		
 		});
 	})
+  $('.layout-container').on('click', '.link-back-to-all', function(e) {
+  e.preventDefault(); 
+    alert('de');
+  })
+
 });
 
 	

@@ -8,7 +8,7 @@ $main_font: cinetype, sans-serif;
 
 $base_font_size: 18px;
 
-@include font-face(cinetype, 'GT-Cinetype-Regular', 300);
+@include font-face(cinetype, '/assets/GT-Cinetype-Regular', 300);
 
 h1, h2, h3, h4, h5, h6 {
   padding: 0;

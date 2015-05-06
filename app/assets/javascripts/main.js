@@ -12,13 +12,15 @@
 	$(document).on('click', '.dataset-y', function(e) {
 		e.preventDefault(); 
 		
-		$('body').addClass('active--project--expand');
+		$('.dataset-y').removeClass('dataset--active');
         $(this).addClass('dataset--active');   
 	})
 
 // Designer Expand 
 
-	$(document).on('click', '.list-all-designers li', function(e) {
+$(document).ready(function() {
+
+	$(".layout-container").on('click', '.list-all-designers li', function(e) {
 		e.preventDefault(); 
 
 		var selected_designer = $(this).attr('name');
@@ -27,14 +29,16 @@
 
 		$('.layout-project-expanded-container').load("/projects/" + selected_designer, function() {
   		
-			});
+		});
 	})
+  $('.layout-container').on('click', '.link-back-to-all', function(e) {
+  e.preventDefault(); 
+    alert('de');
+  })
 
+});
 
-	$(document).on('click', '.link-back-to-all', function(e) {
-	e.preventDefault(); 
-		alert('de');
-	})
+	
 
 // Swiper 
 
@@ -47,11 +51,6 @@
         spaceBetween: 30,
         loop: true
     });
-
-// Designer Closes
-
-
-	
 
 // Scroll To Class Menu Function 
 
@@ -72,9 +71,16 @@
 	$(document).on('click', '.js-manifesto', function(e) {
           e.preventDefault(); 
     		
-          $('.article-info-block').fadeOut();
-          $('.article-manifesto-block').fadeIn();
-      });
+          $('.article-info-block').fadeOut(500);
+          $('.article-manifesto-block').delay(500).fadeIn(1000);
+     });
+
+	$(document).on('click', '.js-about', function(e) {
+          e.preventDefault(); 
+    		
+          $('.article-manifesto-block').fadeOut(500);
+          $('.article-info-block').delay(500).fadeIn(1000);
+     });
 
 // Change header on scroll 
 
@@ -88,3 +94,4 @@ $(window).scroll(function(){
 		    $('header').removeClass('header--collapse');
 		}
 	});
+

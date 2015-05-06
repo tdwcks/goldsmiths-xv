@@ -16,12 +16,21 @@
 }
 
 .article-data-list {
+  display: block;
+  padding-top: 0;
+  margin: 0;
   width: 180px;
   float: right;
+  clear: both;
+
+  .list-data-y {
+    padding: 0;
+  }
 }
 
 .article-manifesto-block {
   display: none;
+  padding-top: 12px;
 }
 
 .layout-designers {

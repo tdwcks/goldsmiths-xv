@@ -34,8 +34,8 @@
 }
 
 .layout-three-column-grid {
+  display: block;
   float: left;
-  height: 20px;
   @include calc(width, "75% - 14px");
 }
 

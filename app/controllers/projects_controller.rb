@@ -21,7 +21,7 @@ class ProjectsController < ApplicationController
 	end
 
 	def create
-	  @project = Project.new(params.require(:project).permit(:title, :designer, :url, :email, :image_folder, :description, :data_slow, :data_past, :data_close, :data_order, :data_private, :data_natural, :data_fiction, :data_for, :twitter, :quote))
+	  @project = Project.new(params.require(:project).permit(:title, :designer, :url, :email, :image_folder, :description, :twitter, :quote, :data_slow, :data_past, :data_close, :data_order, :data_private, :data_natural, :data_fiction, :data_for))
 	  if @project.save
 	    flash[:notice] = "#{@project.title} saved."
 	    redirect_to  :action => 'list'

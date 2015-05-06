@@ -1,0 +1,126 @@
+// ==========================================================================
+//
+// Canvas
+//
+//
+
+.container-canvas {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    width: 55%;
+    height: 450px;
+    padding: 0;
+    top: 100px;
+    left: 0;
+    right: 0;
+    padding-left: 50px;
+}
+
+
+.person{
+    height: 5px;
+    width: 5px;
+    display: block;
+    border-radius: 5px;
+    position: absolute;
+    background: #fff;
+}
+.people{
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    width: 55%;
+    height: 450px;
+    padding: 0;
+    top: 100px;
+    left: 0;
+    right: 0;
+    padding-left: 50px;
+}
+
+ h1 {
+    display: none;
+    font-size: 0.7em;
+    display: block;
+    position: absolute;
+    top: -4px;
+    right: 10px;
+    color: #fff;
+}
+
+.axis {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    width: 55%;
+    height: 450px;
+    padding: 0;
+    top: 100px;
+    left: 0;
+    right: 0;
+    padding-left: 50px;
+}
+
+.x-axis {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+
+    background: #fff;
+}
+
+.x-axis-label-low {
+    position: absolute;
+    top: 43%;
+    left: 50px;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.x-axis-label-high {
+    position: absolute;
+    top: 43%;
+    right: -50px;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.y-axis {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 1px;
+    background: #fff;
+    margin-left: 50px;
+}
+
+.y-axis-label-high {
+    position: absolute;
+    top: 0px;
+    font-size: 0.9em;
+    left: 59%;
+    color: #fff;
+}
+
+.y-axis-label-low {
+    position: absolute;
+    bottom: 0px;
+    font-size: 0.9em;
+    left: 58%;
+    color: #fff;
+}
+
+#network {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    width: 100.2%;
+    height: 450px;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}

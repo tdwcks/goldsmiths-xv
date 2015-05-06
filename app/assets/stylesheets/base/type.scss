@@ -10,8 +10,8 @@ $base_font_size: 18px;
 
 @font-face {
   font-family: 'cinetype Halflings';
-  src: url('/assets/GT-Cinetype-Regular.eot');
-  src: url('/assets/GT-Cinetype-Regular.eot?#iefix') format('embedded-opentype'), url('/assets/GT-Cinetype-Regular.woff') format('woff'), url('/assets/GT-Cinetype-Regular.ttf') format('truetype'), url('/assets/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+  src: font-url('/assets/GT-Cinetype-Regular.eot');
+  src: font-url('/assets/GT-Cinetype-Regular.eot?#iefix') format('embedded-opentype'), font-url('/assets/GT-Cinetype-Regular.woff') format('woff'), font-url('/assets/GT-Cinetype-Regular.ttf') format('truetype'), font-url('/assets/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
 
 h1, h2, h3, h4, h5, h6 {

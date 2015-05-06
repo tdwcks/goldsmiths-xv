@@ -77,7 +77,7 @@ function dataChange(e){//to be bound to each link that triggers a data change
 function labelAxes(isX,labels){//add labels to the axis. 
 //if isX is true, adds the labels to x axis
 //if isX is false, adds the labels to the Y axis
-//labels is a comma seperated string with the top or left label first, and the bottom or right one seccons
+//labels is a comma seperated string with the top or left label first, and the bottom or right one second
    labels = labels.split(",")
    console.log(labels);
     if (isX){

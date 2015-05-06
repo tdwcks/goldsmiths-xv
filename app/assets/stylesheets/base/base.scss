@@ -51,7 +51,8 @@ body {
 
 .background-white {
   background: #fff;
-  height: 2300px;
+  min-height: 100%;
+  padding-bottom: 100px;
 }
 
 img,

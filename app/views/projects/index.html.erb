@@ -55,6 +55,19 @@
 </div>
 
 <ul class=people>
+
+	<% @projects.each do |project| %>
+
+		<li class="person" data-slow='<%= project.data_slow %>' data-past='<%= project.data_past %>' data-close='<%= project.data_close %>' data-order='<%= project.data_order %>' data-private='<%= project.data_private %>' data-natural='<%= project.data_natural %>' data-fiction='<%= project.data_fiction %>' data-for='<%= project.data_for %>'>
+
+			<h1><%= project.designer %></h1>
+  		</li>
+
+	<% end %>
+
+</ul>
+
+<ul class=people>
     <li class="person" data-slow="0.3" data-past="0.23" data-close="0.23" data-order="0.32" data-private="0.8" data-natural="0.23" data-fiction="0.54" data-for="0.55" id="">
         <h1>
             Tom
@@ -146,6 +159,7 @@
 			<nav class="article-data-list">
 
 			    <ul class="list-data-x">
+			    	<h5 class="type-data-title">X Axis</h5>
 			        <a href="#" class="link-switch-dataset" id="xSlow" data-setToSwitch="slow" data-axis="x" data-labels="Slow,Fast" >Slow - Fast</a>
 			        <a href="#" class="link-switch-dataset" id="xPast" data-setToSwitch="past" data-axis="x" data-labels="Past,Future" >Past - Future</a>
 			        <a href="#" class="link-switch-dataset" id="xClose" data-setToSwitch="close" data-axis="x" data-labels="Close,Far" >Close - Far</a>
@@ -157,6 +171,7 @@
 			    </ul>
 
 			    <ul class="list-data-y">
+			    	<h5 class="type-data-title">Y Axis</h5>
 			         <a href="#" class="link-switch-dataset" id="ySlow" data-setToSwitch="slow" data-axis="y" data-labels="Slow,Fast" >Slow - Fast</a>
 			         <a href="#" class="link-switch-dataset" id="yPast" data-setToSwitch="past" data-axis="y" data-labels="Past,Future" >Past - Future</a>
 			         <a href="#" class="link-switch-dataset" id="yClose" data-setToSwitch="close" data-axis="y" data-labels="Close,Far" >Close - Far</a>

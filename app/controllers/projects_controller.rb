@@ -21,7 +21,7 @@ class ProjectsController < ApplicationController
 	end
 
 	def create
-	  @project = Project.new(params.require(:project).permit(:title, :designer, :url, :email, :image_folder, :description, :twitter, :quote, :data_slow, :data_past, :data_close, :data_order, :data_private, :data_natural, :data_fiction, :data_for))
+	  @project = Project.new(params.require(:project).permit(:title, :designer, :url, :email, :vimeo_link, :description, :twitter, :quote, :data_slow, :data_past, :data_close, :data_order, :data_private, :data_natural, :data_fiction, :data_for))
 	  if @project.save
 	    flash[:notice] = "#{@project.title} saved."
 	    redirect_to  :action => 'list'
@@ -36,7 +36,7 @@ class ProjectsController < ApplicationController
 
 	def update
 	  @project = Project.find params[:id]
-	  if @project.update_attributes(params.require(:project).permit(:title, :designer, :url, :email, :image_folder, :description, :data_slow, :data_past, :data_close, :data_order, :data_private, :data_natural, :data_fiction, :data_for, :twitter, :quote))
+	  if @project.update_attributes(params.require(:project).permit(:title, :designer, :url, :email, :vimeo_link, :description, :twitter, :quote, :data_slow, :data_past, :data_close, :data_order, :data_private, :data_natural, :data_fiction, :data_for))
 	    flash[:notice] = "#{@project.title} saved."
 	    redirect_to  :action => 'list'
 	  else

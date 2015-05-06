@@ -1,8 +1,10 @@
 <article class="layout-designer-expanded">
 
+	<a href="" class="link-back-to-all">Show all Projects</a>
+
 	<div class="layout-two-column-grid">
 							
-		<h4 class="expanded-project-name"><%= @project.title %><%= @project.id %> - <%= @project.designer %></h4>
+		<h4 class="expanded-project-name"><%= @project.title %> - <%= @project.designer %></h4>
 
 		<a class="link-expanded-email" href="<%= @project.url %>"><%= @project.url %></a>
 
@@ -44,11 +46,13 @@
 
 	<div class="layout-two-column-grid layout-column-right">
 
-		<a href="" class="link-back-to-all"></a>
-
-		<p class="expanded-project-description">
-			<%= @project.description %>
+		<p class="expanded-project-quote">
+			<%= @project.quote %>
 		</p>
+
+		<div class="expanded-project-description">
+			<%= simple_format(@project.description) %>
+		</div>
 
 	</div>
 

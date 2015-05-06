@@ -10,6 +10,18 @@
   @include calc(width, "90%");
   max-width: 1200px;
   position: relative;
+
+  @include mq("medium", "max-width") {
+    width: 95%;
+  }
+
+  @include mq("small", "max-width") {
+    width: 85%;
+  }
+
+  @include mq("extra-small", "max-width") {
+    width: 90%;
+  } 
 }
 
 .a-block {
@@ -22,15 +34,45 @@
   }
 }
 
+.layout-hero-one-column-grid {
+  float: left; 
+  @include calc(width, "25% - 18px");
+  margin-right: 24px;
+
+  @include mq("medium", "max-width") {
+     @include calc(width, "33.3% - 18px");
+  } 
+
+  @include mq("small", "max-width") {
+     @include calc(width, "50% - 18px");
+  } 
+
+  @include mq("extra-small", "max-width") {
+     @include calc(width, "75%");
+  } 
+}
+
 .layout-one-column-grid {
   float: left; 
   @include calc(width, "25% - 18px");
   margin-right: 24px;
+
+  @include mq("small", "max-width") {
+     @include calc(width, "50% - 25px");
+  } 
+
+  @include mq("extra-small", "max-width") {
+     @include calc(width, "100%");
+  } 
 }
 
 .layout-two-column-grid {
   float: left;
    @include calc(width, "50% - 14px");
+
+  @include mq("small", "max-width") {
+     @include calc(width, "100%");
+  } 
 }
 
 .layout-three-column-grid {
@@ -42,6 +84,11 @@
 .layout-column-right {
   margin-right: 0px;
   float: right;
+
+  @include mq("small", "max-width") {
+     margin-right: 24px;
+     float: left;
+  } 
 }
 
 .layout-clear {
@@ -51,4 +98,8 @@
 .layout-clear-top {
   margin-top: 130px;
   display: block;
+
+  @include mq("small", "max-width") {
+    margin-top: 190px;
+  }
 }

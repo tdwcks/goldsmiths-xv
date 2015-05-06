@@ -21,10 +21,13 @@
   margin: 0;
   width: 180px;
   float: right;
-  clear: both;
 
   .list-data-y {
     padding: 0;
+  }
+
+  @include mq("medium", "max-width") {
+      display: none;
   }
 }
 
@@ -49,6 +52,10 @@
     display: block;
     width: 100%;
 
+    @include mq("small", "max-width") {
+      top: 50px;
+    }  
+
     .active--project--expand & {
       display: none;
       @include animation(project--out 0.5s forwards);
@@ -60,6 +67,7 @@
   }
 
   .layout-designer-expanded {
+    z-index: 1000000;
     position: absolute;
     top: 0;
     display: block;
@@ -69,6 +77,10 @@
     padding-top: 10px;
     padding-bottom: 25px;
     z-index: -100;
+
+    @include mq("small", "max-width") {
+      top: 50px;
+    }  
 
     &.active--project--expand {
       @include animation(project--in 1s forwards);

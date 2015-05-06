@@ -9,17 +9,19 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 110px;
+	height: 120px;
 	padding-top: 50px;
-	@include background-image(linear-gradient(black  30%, transparent 100%));
+	@include background-image(linear-gradient(black  50%, transparent 100%));
 	@include transition(all, 0.4s, ease-in-out);
 
 	.header-logo-large {
 		font-size: 1em;
+		margin-top: 8px;
 		color: #fff;
 		text-transform: uppercase;
 		float: right;
 		position: relative;
+		display: block;
 
 
 		&:after {
@@ -34,6 +36,10 @@ header {
 			background-size: 100% 100%;
 			background-repeat: no-repeat;
 			@include transition(all, 0.3s, ease-in-out);
+
+			@include mq("extra-small", "max-width") {
+ 				left: 0;
+ 			} 
 		}
 
 		&:before {
@@ -48,8 +54,25 @@ header {
 			background-size: 100% 100%;
 			background-repeat: no-repeat;
 			@include transition(all, 0.3s, ease-in-out);
+
+			@include mq("extra-small", "max-width") {
+ 				left: 40px;
+ 			}
 		}
+
+		@include mq("extra-small", "max-width") {
+     		float: left;
+     		margin-left: 0px;
+     		position: absolute;
+     		top: 5px;
+     		left: 0;
+  		} 
 	}
+
+	@include mq("extra-small", "max-width") {
+ 		height: 120px;
+ 		@include background-image(linear-gradient(black  60%, transparent 100%));
+ 	} 
 }
 
 header.header--collapse {
@@ -67,12 +90,23 @@ header.header--collapse {
 		}
 
 	}
+
+	@include mq("extra-small", "max-width") {
+ 		padding-top: 12px;
+ 		@include background-image(linear-gradient(black  80%, transparent 100%));
+ 		height: 100px;
+
+ 		nav {
+ 			padding-top: 50px;
+ 		}
+ 	} 
 }
 
 nav {
 	display: block;
 	margin-top: 0;
 	width: 50%;
+	@include transition(all, 0.3s, ease-in-out);
 	float: left;
 
 	.menu-items {
@@ -97,6 +131,11 @@ nav {
 			&:first-child {
 				padding-left: 0;
 			}
-		}
+		} 
+	}
+
+	@include mq("extra-small", "max-width") {
+		padding-top: 70px;
+		width: 100%;	
 	}
 }

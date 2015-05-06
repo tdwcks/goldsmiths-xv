@@ -5,6 +5,10 @@
   display: block;
   position: relative;
   margin-top: 30px;
+
+  @include mq("extra-small", "max-width") {
+    height: 320px;
+  } 
 }
 
 .swiper-slide {

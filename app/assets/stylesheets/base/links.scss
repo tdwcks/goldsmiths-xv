@@ -19,16 +19,15 @@
 }
 
 .link-back-to-all {
-	padding-bottom: 125px;
 	display: block;
 	font-size: 0.9em;
-	color: $colour_lightestgrey;
+	height: 50px;
 	width: 140px;
-	position: relative;
-	float: right;
+	top: 0;
+	right: 0;
+	position: fixed;
 	text-decoration: none;
-	text-align: left;
-
+	color: #fff;
 	&:hover {
 		color: #fff;
 	}
@@ -47,8 +46,17 @@
 	}
 }
 
+.link-hero-twitter {
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+	padding: 50px 0px 5px 0px;
+	font-family: 'Times new roman'
+}
+
 .link-expanded-email {
-	font-size: 0.9em;
+	font-size: 0.95em;
 	color: $colour_lightestgrey;
 	text-decoration: none;
 	display: block;

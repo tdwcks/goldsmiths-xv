@@ -109,15 +109,16 @@ p {
     }
   }
 
-  &.expanded-project-description {
+  &.expanded-project-quote {
     color: $colour_lightestgrey;
     width: 70%;
     margin-left: 90px;
     font-family: "Times new roman";
-    font-size: 1em;
+    font-size: 1.2em;
+    font-style: italic;
     margin-top: 0;
     line-height: 1.6em;
-    padding-bottom: 10px;
+    padding-bottom: 5rpx;
     margin-top: 100px;
     display: block;
     clear: both;
@@ -125,11 +126,11 @@ p {
 
   &.type-hero {
     color: #fff;
-    font-size: 0.95em;
+    font-size: 1.05em;
     font-family: "Times new roman";
     margin-top: 0;
     line-height: 1.5em;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
 
   &.type-smallest {
@@ -178,7 +179,7 @@ span {
     padding-top: 45px;
 
     br {
-      line-height: 1.4em;
+      line-height: 1.5em;
       display: block;
     }
 
@@ -188,4 +189,17 @@ span {
   }
 }
 
+.expanded-project-description {
+    color: $colour_lightestgrey;
+    width: 70%;
+    margin-left: 90px;
+    font-family: "Times new roman";
+    font-size: 1em;
+    margin-top: 0;
+    line-height: 1.6em;
+    padding-bottom: 10px;
+    margin-top: 25px;
+    display: block;
+    clear: both;
+  }
 

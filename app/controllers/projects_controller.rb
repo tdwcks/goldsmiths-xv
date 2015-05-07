@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
 
-	http_basic_authenticate_with name: "tom", password: "test", except: :index
+	before_filter :authenticate, :except => [:index, :show]
 
 	def index 
 		@projects = Project.order('last_name ASC')

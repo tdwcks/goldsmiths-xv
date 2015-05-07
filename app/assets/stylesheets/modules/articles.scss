@@ -62,6 +62,7 @@
     }
 
     .active--project--collapse & {
+      display: block;
       @include animation(project--in 1s forwards);
     }
   }
@@ -70,26 +71,39 @@
     z-index: 1000000;
     position: absolute;
     top: 0;
-    display: block;
+    display: none;
     width: 100%;
-    clear: both;
+
     min-height: 100%;
     padding-top: 10px;
     padding-bottom: 25px;
     z-index: -100;
+    background: black;
 
     @include mq("small", "max-width") {
       top: 50px;
-    }  
-
-    &.active--project--expand {
-      @include animation(project--in 1s forwards);
     }
 
-    &.active--project--collapse {
+    .active--project--expand & {
+      display: block;
+      @include animation(project--in 1s forwards);
+    }  
+
+    .active--project--collapse & {
+      display: none;
       @include animation(project--out 1s forwards);
     }
   }
 }
+
+.layout-description-holder {
+    width: 100%;
+    min-height: 100%;
+    margin-top: 158px;
+
+    @include mq("small", "max-width") {
+      margin-top: 50px;
+    } 
+  }
 
 

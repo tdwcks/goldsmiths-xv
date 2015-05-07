@@ -20,37 +20,45 @@
 
 $(document).ready(function() {
 
-	$(".layout-container").on('click', '.list-all-designers li', function(e) {
+	$(document).on('click', '.list-all-designers li', function(e) {
 		e.preventDefault(); 
 
 		var selected_designer = $(this).attr('name');
 
 		$('body').addClass('active--project--expand');
 
-		$('.layout-project-expanded-container').load("/projects/" + selected_designer, function() {
-  		
-		});
-	})
-  $('.layout-container').on('click', '.link-back-to-all', function(e) {
-  e.preventDefault(); 
-    alert('de');
-  })
+		$('#js_project_name').load('/projects/' + selected_designer + ' #js_project_name');
+    $('#js_project_site').load('/projects/' + selected_designer + ' #js_project_site');
+    $('#js_project_email').load('/projects/' + selected_designer + ' #js_project_email');
+    $('#js_project_twitter').load('/projects/' + selected_designer + ' #js_project_twitter');
+    $('#js_image_one').load('/projects/' + selected_designer + ' #js_image_one>*');
+    $('#js_image_two').load('/projects/' + selected_designer + ' #js_image_two>*');
+    $('#js_image_three').load('/projects/' + selected_designer + ' #js_image_three>*');
+    $('#js_quote').load('/projects/' + selected_designer + ' #js_quote')
+    $('#js_description').load('/projects/' + selected_designer + ' #js_description>*')
+    return false;
+
+	});
 
 });
 
-	
 
-// Swiper 
+// Exit Click Machine 
 
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        slidesPerView: 1,
-        paginationClickable: true,
-        spaceBetween: 30,
-        loop: true
-    });
+  $(document).on('click', '.link-back-to-all', function(e) {
+    e.preventDefault(); 
+
+    $('body').addClass('active--project--collapse');
+    $('body').addClass('active--project--expand');
+
+    var removeCollapse = function(){
+      $('body').removeClass('active--project--collapse')
+    }
+    setInterval(removeCollapse, 500);
+    
+    $('body').removeClass('active--project--expand');
+
+  });
 
 // Scroll To Class Menu Function 
 

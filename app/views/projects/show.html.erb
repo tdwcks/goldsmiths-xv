@@ -1,61 +1,12 @@
-<article class="layout-designer-expanded">
+<h4 id="js_project_name" class="expanded-project-name"><%= @project.title %> - <%= @project.designer %></h4>
+<a id="js_project_site" class="link-expanded-email" href="<%= @project.url %>"><%= @project.url %></a>
+<a id="js_project_email" class="link-expanded-email" href="mailto:<%= @project.email %>?Subject=Great%20Project!" ><%= @project.email %></a>
+<a id="js_project_twitter" class="link-expanded-email" href="https://twitter.com/<%= @project.twitter %>" >@<%= @project.twitter %></a>
+<div id="js_image_one" class="swiper-slide"><%= image_tag("#{::Rails.root.to_s}/db-img/project#{@project.id}/1.jpg") %></div>
+<div id="js_image_two" class="swiper-slide"><%= image_tag("#{::Rails.root.to_s}/db-img/project#{@project.id}/2.jpg") %></div>
+<div id="js_image_three" class="swiper-slide"><%= image_tag("#{::Rails.root.to_s}/db-img/project#{@project.id}3.jpg") %></div>
+<p id="js_quote" class="expanded-project-quote"><%= @project.quote %></p>
+<div id="js_description" class="expanded-project-description"><%= simple_format(@project.description) %></div>
 
-	<a href="" class="link-back-to-all">Show all Projects</a>
-
-	<div class="layout-two-column-grid">
-							
-		<h4 class="expanded-project-name"><%= @project.title %> - <%= @project.designer %></h4>
-
-		<a class="link-expanded-email" href="<%= @project.url %>"><%= @project.url %></a>
-
-		<a class="link-expanded-email" href="mailto:<%= @project.email %>?Subject=Great%20Project!" ><%= @project.email %></a>
-
-		<a class="link-expanded-email" href="https://twitter.com/<%= @project.twitter %>" >@<%= @project.twitter %></a>
-
-		<div class="swiper-container">
-
-			<div class="swiper-wrapper">
-
-	            <div class="swiper-slide">
-
-	            		<%= image_tag("#{::Rails.root.to_s}/db-img/project#{@project.id}/1.jpg") %>
-	            
-				</div>
-
-	            <div class="swiper-slide">
-
-	            	<img class="image-projects" src="assets/db-img/project<%= @project.id %>/2.jpg"/>
-
-	            </div>
-
-	            <div class="swiper-slide">
-
-	            	<img class="image-projects" src="assets/db-img/project<%= @project.id %>/3.jpg"/>
-
-	            </div>
-	        
-	        </div>
-
-			    <div class="swiper-button-next"></div>
-
-				<div class="swiper-button-prev"></div>
-
-		</div>
-
-	</div>
-
-	<div class="layout-two-column-grid layout-column-right">
-
-		<p class="expanded-project-quote">
-			<%= @project.quote %>
-		</p>
-
-		<div class="expanded-project-description">
-			<%= simple_format(@project.description) %>
-		</div>
-
-	</div>
-
-</article>
 
 

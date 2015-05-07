@@ -67,11 +67,30 @@ $(document).ready(function() {
               scrollTop: $("."+id).offset().top - 60}, 400);
       }
 
-      $(document).on('click', '.menu-item-link', function(e) {
+      $(document).on('click', '.menu-underline', function(e) {
           e.preventDefault(); 
           goToByScroll($(this).attr("id"));
-          $('.menu-item-link').removeClass('menu--item--active');
+          $('.menu-underline').removeClass('menu--item--active');
           $(this).addClass('menu--item--active');   
+      });
+
+      $(document).on('click', '.menu-item-link', function(e) {
+          e.preventDefault();
+          goToByScroll($(this).attr("id"));
+      });
+
+      $(document).on('click', '.js-people', function(e) {
+          e.preventDefault();
+          $('body').addClass('active--project--collapse');
+          $('body').addClass('active--project--expand');
+
+          var removeCollapse = function(){
+            $('body').removeClass('active--project--collapse')
+          }
+          setInterval(removeCollapse, 500);
+          
+          $('body').removeClass('active--project--expand');
+          
       });
 
 // Change About To Manifesto 
@@ -89,6 +108,11 @@ $(document).ready(function() {
           $('.article-manifesto-block').fadeOut(500);
           $('.article-info-block').delay(500).fadeIn(1000);
      });
+
+// Image Slider Resize
+    
+  $('')
+
 
 // Change header on scroll 
 

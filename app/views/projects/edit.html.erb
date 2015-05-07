@@ -16,19 +16,12 @@
 
 		<%= simple_form_for (@project) do |form| %>
 			  <%= form.input :title, label: "Project Title" %>
-		  	  <%= form.input :designer, label: "Designer Name" %>
-		  	  <%= form.input :url, label: "Designer / Project Website" %>
-		  	  <%= form.input :email, label: "Designers Email" %>
-		  	  <%= form.input :vimeo_link, label: "Vimeo Link" %>
+		  	  <%= form.input :first_name, label: "First Name" %>
+		  	  <%= form.input :last_name, label: "Last Name" %>
+		  	  <%= form.input :url, label: "Designer / Project Website", hint: "e.g facebook.com"  %>
+		  	  <%= form.input :email, label: "Designers Email", hint: "tom@miln.co" %>
+		  	  <%= form.input :vimeo_link, label: "Vimeo Link",  hint: "full address e.g: https://vimeo.com/99876106" %>
 		  	  <%= form.input :twitter, label: "Twitter" %>
-		  	  <%= form.input :data_slow, label: "Data Slow" %>
-		  	  <%= form.input :data_past, label: "Data Past" %>
-		  	  <%= form.input :data_close, label: "Data Close" %>
-		  	  <%= form.input :data_order, label: "Data Order" %>
-		  	  <%= form.input :data_private, label: "Data Private" %>
-		  	  <%= form.input :data_natural, label: "Data Natural" %>
-		  	  <%= form.input :data_fiction, label: "Data Fiction" %>
-		  	  <%= form.input :data_for, label: "Data For" %>
 		  	  <%= form.input :description, label: "Description", as: :text, :input_html => {:rows => 10} %>
 		  	  <%= form.input :quote, label: "Quote", as: :text, :input_html => {:rows => 2} %>
 		  	  

@@ -8,7 +8,16 @@ $main_font: cinetype, sans-serif;
 
 $base_font_size: 18px;
 
-@include font-face(cinetype, '/assets/GT-Cinetype-Regular', 300);
+@font-face {
+    font-family: 'cinetype';
+    src: asset-url('GT-Cinetype-Regular.eot');
+    src: asset-url('GT-Cinetype-Regular?#iefix') format('embedded-opentype'),
+         asset-url('GT-Cinetype-Regular.woff') format('woff'),
+         asset-url('GT-Cinetype-Regular.ttf') format('truetype'),
+         asset-url('GT-Cinetype-Regular.svg#GT-Cinetype-Regular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
 
 h1, h2, h3, h4, h5, h6 {
   padding: 0;

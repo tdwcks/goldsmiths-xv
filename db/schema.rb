@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150505231625) do
+ActiveRecord::Schema.define(version: 20150507142532) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "projects", force: :cascade do |t|
     t.string   "title"
-    t.string   "designer"
+    t.string   "first_name"
     t.string   "url"
     t.string   "email"
     t.string   "vimeo_link"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20150505231625) do
     t.string   "data_for"
     t.string   "twitter"
     t.text     "quote"
+    t.string   "last_name"
   end
 
 end

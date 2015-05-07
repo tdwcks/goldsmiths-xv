@@ -18,6 +18,16 @@
   margin: 0 auto;
 }
 
+.hint {
+  float: right;
+  color: $colour_green;
+}
+
+.error {
+  float: right;
+  color: red;
+}
+
 .projects-holder {
   padding-top: 150px;
 

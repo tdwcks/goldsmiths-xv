@@ -34,6 +34,7 @@
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	pointer: cursor;
+	z-index: 100000;
 
 	&:hover {
 		color: #fff;

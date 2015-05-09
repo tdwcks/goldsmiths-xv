@@ -61,6 +61,11 @@ h4 {
     &.expanded-project-name {
       font-size: 1.2em;
       color: $colour_lightestgrey;
+
+      @include mq("extra-small", "max-width") {
+        width: 80%;
+        line-height: 1.4em;
+      } 
     }
 
     &.backend-project-designer {

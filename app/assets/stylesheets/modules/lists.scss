@@ -13,10 +13,6 @@ ul.list-all-designers {
 
   @include mq("extra-small", "max-width") {
      padding: 0 0 0 0;
-
-     &:last-child {
-      padding-bottom: 50px;
-     }
   } 
 
   li {

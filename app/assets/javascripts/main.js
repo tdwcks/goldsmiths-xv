@@ -53,7 +53,15 @@ $(document).ready(function() {
     
     $('body').removeClass('active--project--expand');
 
+    $("#js-swipe-holder-one").html("");
+
   });
+
+function imgLoaded(img){
+    var $img = $(img);
+ 
+    $img.parent().addClass('loaded');
+};
 
 // Scroll To Class Menu Function 
 

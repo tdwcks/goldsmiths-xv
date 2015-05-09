@@ -1,21 +1,18 @@
 .swiper-container {
   background: lighten(#000, 10%);
   min-width: 100%;
-  height: 370px;
   display: block;
   position: relative;
   margin-top: 30px;
+  @include maintain-ratio(150 112);
 
-  @include mq("extra-small", "max-width") {
-    height: 320px;
-  } 
 }
 
 .swiper-slide {
-    height: 400px;
+    height: 100%;
     text-align: center;
     font-size: 18px;
-    width: 556px;
+    width: 100%;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -35,6 +32,7 @@
 
   position: relative;
   overflow: hidden;
+
   /* Fix of Webkit flickering */
   z-index: 1;
 }

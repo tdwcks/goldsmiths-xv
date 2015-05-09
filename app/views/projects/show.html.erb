@@ -2,9 +2,7 @@
 <%= link_to "#{@project.url}", "http://#{@project.url}", :id => "js_project_email", :class => "link-expanded-email", :target => "_blank"%>
 <%= link_to "#{@project.email}", "mailto:#{@project.email}?Subject=Great%20Project!", :id => "js_project_email", :class => "link-expanded-email", :target => "_blank"%>
 <%= link_to "#{@project.twitter}", "https://twitter.com/#{@project.twitter}", :id => "js_project_email", :class => "link-expanded-email", :target => "_blank"%>
-<div id="js_image_one" class="swiper-slide"><%= image_tag image_path("project_1.jpg") %></div>
-<div id="js_image_two" class="swiper-slide"><%= image_tag image_path("#{@project.id}-1.jpg") %></div>
-<div id="js_image_three" class="swiper-slide"><%= image_tag image_path("project_1.jpg") %></div>
+<div id="js_image_one" class="swiper-slide"><%= image_tag image_path("#{@project.id}.1.jpg") %></div>
 <p id="js_quote" class="expanded-project-quote"><%= @project.quote %></p>
 <div id="js_description" class="expanded-project-description"><%= simple_format(@project.description) %></div>
 

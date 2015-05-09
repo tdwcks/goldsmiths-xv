@@ -14,27 +14,25 @@ $(document).ready(function() {
     $('#js_project_email').load('/projects/' + selected_designer + ' #js_project_email');
     $('#js_project_twitter').load('/projects/' + selected_designer + ' #js_project_twitter');
     $('#js-swipe-holder-one').load('/projects/' + selected_designer + ' #js_image_one');
-    $('#js-swipe-holder-two').load('/projects/' + selected_designer + ' #js_image_two');
-    $('#js-swipe-holder-three').load('/projects/' + selected_designer + ' #js_image_three');
     $('#js_quote').load('/projects/' + selected_designer + ' #js_quote');
     $('#js_description').load('/projects/' + selected_designer + ' #js_description>*');
     return false;
 
 	});
 
-  $(document).on('click', '.list-all-designers li', function(e) {
-    e.preventDefault(); 
+  //$(document).on('click', '.list-all-designers li', function(e) {
+    //e.preventDefault(); 
 
-   var swiper = new Swiper('.layout-designers .layout-designer-expanded .layout-two-column-grid .swiper-container', {
-          nextButton: '.swiper-button-next',
-          prevButton: '.swiper-button-prev',
-          slidesPerView: 1,
-          stopPropagation: true,
-          continuous: true,
-          paginationClickable: true,
-          loop: false
-      });
-  });
+  // var swiper = new Swiper('.layout-designers .layout-designer-expanded .layout-two-column-grid .swiper-container', {
+  //       nextButton: '.swiper-button-next',
+  //        prevButton: '.swiper-button-prev',
+  //        slidesPerView: 1,
+  //        stopPropagation: true,
+  //        continuous: true,
+  //        paginationClickable: true,
+  //        loop: false
+  //    });
+  //});
 
 });
 

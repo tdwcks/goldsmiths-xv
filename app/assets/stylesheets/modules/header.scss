@@ -67,12 +67,18 @@ header {
      		top: 5px;
      		left: 0;
   		} 
+
+  		@include mq("super-small", "max-width") {
+ 			font-size: 0.84em;
+ 		} 
 	}
 
 	@include mq("extra-small", "max-width") {
  		height: 120px;
  		@include background-image(linear-gradient(black  60%, transparent 100%));
  	} 
+
+
 }
 
 header.header--collapse {

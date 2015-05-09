@@ -50,6 +50,10 @@
   @include mq("extra-small", "max-width") {
      @include calc(width, "75%");
   } 
+
+  @include mq("super-small", "max-width") {
+     @include calc(width, "85%");
+  } 
 }
 
 .layout-one-column-grid {

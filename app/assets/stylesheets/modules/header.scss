@@ -77,8 +77,15 @@ header {
  		height: 120px;
  		@include background-image(linear-gradient(black  60%, transparent 100%));
  	} 
+}
 
+/// iPhone Landscape Logo Fix - 
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 650px) and (orientation: landscape) {
+
+	.header-logo-large {
+		margin-top: -12px !important;
+	}
 }
 
 header.header--collapse {

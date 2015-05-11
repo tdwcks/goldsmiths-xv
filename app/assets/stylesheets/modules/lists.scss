@@ -11,6 +11,10 @@ ul.list-all-designers {
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
 
+  @include mq("small", "max-width") {
+       padding: 0 0 0 0;
+  }
+
   @include mq("extra-small", "max-width") {
      padding: 0 0 0 0;
   } 

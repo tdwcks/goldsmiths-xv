@@ -84,6 +84,9 @@ function imgLoaded(img){
 
   $(document).on('click', '.js-people', function(e) {
       e.preventDefault();
+
+      $("#js-swipe-holder-one").html("");
+      
       $('body').addClass('active--project--collapse');
       $('body').addClass('active--project--expand');
 

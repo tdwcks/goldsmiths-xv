@@ -11,12 +11,11 @@
   position: relative;
 
   @include mq("medium", "max-width") {
-      max-height: 625px;
+      height: 625px;
   }
 
-  @include mq("super-small", "max-width") {
-      height: 1400px;
-      max-height: 700px;
+  @include mq("small", "max-width") {
+      height: 700px;
   }
 }
 

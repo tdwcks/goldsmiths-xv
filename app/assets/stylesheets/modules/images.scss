@@ -29,6 +29,10 @@ img {
 		width: 100%;
 	}
 
+	@include mq("extra-large", "min-width") {
+    	margin-top: 150px;
+  	}
+
 	@include mq("medium", "max-width") {
       display: none;
   	}

@@ -39,6 +39,10 @@
   @include calc(width, "25% - 18px");
   margin-right: 24px;
 
+  @include mq("extra-large", "min-width") {
+    margin-top: 150px;
+  }
+
   @include mq("medium", "max-width") {
      @include calc(width, "33.3% - 18px");
   } 
